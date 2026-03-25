@@ -1,6 +1,5 @@
 "use client";
 import { motion, useScroll } from "motion/react"
-import Navbar from "./Navbar";
 import Intro from "./Intro";
 const Motion = () => {
   const { scrollYProgress } = useScroll();
@@ -19,8 +18,6 @@ const Motion = () => {
           backgroundColor: "#ff0088",
         }}
       />
-
-      <Navbar />
 
       <Intro />
       <Intro />

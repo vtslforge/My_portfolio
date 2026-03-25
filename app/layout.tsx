@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "./styles/globals.css";
 import { Noto_Serif_Display } from "next/font/google";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -30,7 +30,7 @@ export default function RootLayout({
       suppressHydrationWarning
       lang="en"
       className={`antialiased ${primaryFont.variable} ${secondaryFont.variable}`}>
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col dark:bg-[#1a1714]">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
