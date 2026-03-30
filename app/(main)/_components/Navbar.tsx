@@ -12,24 +12,24 @@ const Navbar = () => {
   const MotionButton = motion.button;
   const { theme, setTheme } = useTheme();
   return (
-    <main className="dark:bg-[#2a2621] element border dark:border-0 fixed bottom-10 left-1/2 -translate-x-1/2 h-auto w-fit rounded-full p-1 flex items-center justify-center gap-1 bg-white">
+    <main className=" z-50 dark:bg-tech-cardDark-bg element fixed bottom-10 left-1/2 -translate-x-1/2 h-auto w-fit rounded-full p-1 flex items-center justify-center gap-1 bg-tech-cardLight-bg">
       <Link
         href="/"
-        className={`flex items-center justify-center cursor-pointer aspect-square h-10 flex-1 w-10 rounded-full bg-transparent text-black hover:bg-amber-600 ${pathname === "/" ? "" : ""}`}
+        className={`navbarChild ${pathname === "/" ? "" : ""}`}
       >
         <RiHome3Line />
       </Link>
 
       <Link
         href="/blog"
-        className={`flex items-center justify-center cursor-pointer aspect-square h-10 flex-1 w-10 rounded-full bg-transparent text-black hover:bg-amber-600 ${pathname === "/blog" ? "" : ""}`}
+        className={`navbarChild ${pathname === "/blog" ? "" : ""}`}
       >
         <RiBloggerLine />
       </Link>
 
       <Link
         href="/github"
-        className={`flex items-center justify-center cursor-pointer aspect-square h-10 flex-1 w-10 rounded-full bg-transparent text-black hover:bg-amber-600 ${pathname === "/github" ? "" : ""}`}
+        className={`navbarChild ${pathname === "/github" ? "" : ""}`}
       >
         <FaGithub />
       </Link>
@@ -37,7 +37,7 @@ const Navbar = () => {
       <MotionButton
         type="button"
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-        className="cursor-pointer h-10 w-10 flex items-center justify-center aspect-square rounded-full bg-transparent text-black hover:bg-amber-600"
+        className="navbarChild"
       >
         <GiMoon />
       </MotionButton>

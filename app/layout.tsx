@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./styles/globals.css";
 import { Noto_Serif_Display } from "next/font/google";
 import { Inter } from "next/font/google";
-import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeProvider } from "@/components/providers/theme-provider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -30,7 +30,7 @@ export default function RootLayout({
       suppressHydrationWarning
       lang="en"
       className={`antialiased ${primaryFont.variable} ${secondaryFont.variable}`}>
-      <body className="min-h-full flex flex-col dark:bg-[#1a1714]">
+      <body className="min-h-full flex flex-col dark:bg-[#000000]">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
