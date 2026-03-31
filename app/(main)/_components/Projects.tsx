@@ -6,20 +6,20 @@ const Projects = () => {
   const projectDetails = [
     {
       label: "portfolio",
-      image: "/frame1.png",
+      image: "/Frame1.png",
       title: "PORTFOLIO",
       link: "www.google.com",
       status:"Completed",
     },
     {
       label: "portfolio",
-      image: "/frame1.png",
+      image: "/Frame1.png",
       title: "PORTFOLIO",
       link: "www.google.com",
     },
     {
       label: "portfolio",
-      image: "/frame1.png",
+      image: "/Frame1.png",
       title: "PORTFOLIO",
       link: "www.google.com",
     },
