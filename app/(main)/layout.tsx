@@ -1,11 +1,7 @@
-import Navbar from "./_components/Navbar";
-import PageMotionShell from "./_components/PageMotionShell";
+import Navbar from './_components/Navbar';
+import PageMotionShell from './_components/PageMotionShell';
 
-export default function DashboardLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   return (
     <div>
       <Navbar />

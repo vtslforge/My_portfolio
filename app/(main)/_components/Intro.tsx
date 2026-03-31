@@ -1,29 +1,28 @@
-"use client";
+'use client';
 
-import Image from "next/image";
+import Image from 'next/image';
 
 const Intro = () => {
   return (
-    <>
-      <header className="flex justify-between mt-9">
-        <article className="flex flex-col items-start leading-8 gap-6 pt-9 pb-9 ">
-          <h1 className="type-display font-primaryFont font-bold">HI, I&apos;M</h1>
-          <h1 className="type-display font-bold font-primaryFont">VATSALYA</h1>
-          <p className="type-heading-md font-secondaryFont">
-            Fullstack Developer crafting scalable, accessible, high-performance
-            systems
-          </p>
-        </article>
-        <article className="border rounded-full aspect-square overflow-hidden relative ">
+    <header className="mt-9">
+      <div className="flex items-center justify-between">
+        <div className="flex flex-col leading-tight gap-1">
+          <h1 className="intro-name font-secondaryFont font-extrabold">Hi, I&apos;m</h1>
+          <h1 className="intro-name font-secondaryFont font-extrabold">Vatsalya</h1>
+        </div>
+        <div className="border rounded-full h-28 w-28 lg:h-40 lg:w-40 flex items-center justify-center overflow-hidden relative">
           <Image
             src="/hravtr.png"
             alt="profile image"
             fill
-            className="object-contain"
+            className="object-contain absolute"
           />
-        </article>
-      </header>
-    </>
+        </div>
+      </div>
+      <p className="intro-subheading font-secondaryFont mt-6 w-full">
+        Fullstack Developer crafting scalable, accessible, high-performance systems
+      </p>
+    </header>
   );
 };
 

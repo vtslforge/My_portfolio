@@ -5,7 +5,7 @@ const AboutSection = () => {
     <main>
       <article className="flex flex-col gap-6">
         <header className="type-heading-lg">ABOUT.</header>
-        <p className="type-body-relaxed font-secondaryFont">
+        <p className="leading-loose w-full font-secondaryFont opacity-75 text-balance">
           Started with curiosity. stayed because i could build. self-taught.
           learned by breaking things, rebuilding them, and chasing whatever i
           didn’t understand. i don’t just learn tech. i use it. if i learn

@@ -1,8 +1,9 @@
-import AboutSection from "./_components/AboutSection";
-import Intro from "./_components/Intro";
-import TechStack from "./_components/TechStack";
-import GithubStat from "./_components/GithubStat";
-import Projects from "./_components/Projects";
+import AboutSection from './_components/AboutSection';
+import Intro from './_components/Intro';
+import TechStack from './_components/TechStack';
+import GithubStat from './_components/GithubStat';
+import Projects from './_components/Projects';
+import Contact from './_components/Contact';
 
 const page = async () => {
   await new Promise((resolve) => setTimeout(resolve, 3000));
@@ -14,7 +15,8 @@ const page = async () => {
         <AboutSection />
         <TechStack />
         <GithubStat />
-        <Projects/>
+        <Projects />
+        <Contact />
       </section>
     </main>
   );
