@@ -12,19 +12,15 @@ body {
 }
 
 /* Custom classes */
-
-.intro-name{
-  @apply text-[2rem] md:text-6xl;
+.sectionHeader{
+  @apply font-bold text-2xl opacity-85 font-HeaderFont
 }
-.intro-subheading{
-  @apply text-lg md:text-2xl
-}
-
 
 /* global fonts */
 @theme {
   --font-primaryFont: var(--titleFont);
   --font-secondaryFont: var(--secondaryFont);
+  --font-HeaderFont: var(--HeaderFont);
 }
 
 /* global color pallets */

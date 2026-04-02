@@ -20,7 +20,7 @@ const Projects = () => {
   ];
   return (
     <main className="space-y-6">
-      <header className="type-heading-lg">PROJECTS.</header>
+        <header className="sectionHeader">PROJECTS<span className='text-tech-hover-card-bg'>.</span></header>
       <section className="grid grid-cols-1 md:grid-cols-2 w-full gap-3">
         {projectDetails.map((project, index) => (
           <figure

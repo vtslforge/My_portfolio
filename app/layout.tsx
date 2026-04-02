@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './styles/globals.css';
 import { Noto_Serif_Display } from 'next/font/google';
 import { Inter } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import { ThemeProvider } from '@/components/providers/theme-provider';
 
 export const metadata: Metadata = {
@@ -20,6 +21,12 @@ const secondaryFont = Inter({
   variable: '--secondaryFont',
 });
 
+const HeaderFont = Poppins({
+  subsets: ['latin'],
+  variable: '--HeaderFont',
+  weight: ["100","200","300","400","500","600","700","800","900"]
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -29,7 +36,7 @@ export default function RootLayout({
     <html
       suppressHydrationWarning
       lang="en"
-      className={`antialiased ${primaryFont.variable} ${secondaryFont.variable}`}>
+      className={`antialiased ${primaryFont.variable} ${secondaryFont.variable} ${HeaderFont.variable}`}>
       <body className="min-h-full flex flex-col dark:bg-[#000000]">
         <ThemeProvider
           attribute="class"

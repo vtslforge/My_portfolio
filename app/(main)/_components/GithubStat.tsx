@@ -17,7 +17,7 @@ const GithubStat = () => {
 
   return (
     <section className="space-y-6">
-      <header className="type-heading-lg">GITHUB ACTIVITY.</header>
+        <header className="sectionHeader">GITHUB ACTIVITY<span className='text-tech-hover-card-bg'>.</span></header>
       <section className="grid w-full gap-4 lg:grid-cols-[minmax(0,1.35fr)_minmax(320px,0.9fr)] lg:items-stretch">
         <section className="w-full overflow-x-auto rounded-2xl border border-white/10 p-2 sm:p-3">
           <div className="min-w-max">
