@@ -9,9 +9,10 @@ const page = async () => {
   await new Promise((resolve) => setTimeout(resolve, 3000));
 
   return (
-    <main className="mt-6 flex justify-center">
-      <section className="flex flex-col w-[95vw] space-y-15 md:w-[75vw]">
-        <Intro />
+    <main className="flex flex-col items-center">
+      <Intro />
+      
+      <section className="flex flex-col w-[95vw] space-y-15 md:w-[75vw] mt-12">
         <AboutSection />
         <TechStack />
         <GithubStat />
