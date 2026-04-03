@@ -11,7 +11,6 @@ const page = async () => {
   return (
     <main className="flex flex-col items-center">
       <Intro />
-      
       <section className="flex flex-col w-[95vw] space-y-15 md:w-[75vw] mt-12">
         <AboutSection />
         <TechStack />
