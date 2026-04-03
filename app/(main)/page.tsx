@@ -5,6 +5,8 @@ import GithubStat from './_components/GithubStat';
 import Projects from './_components/Projects';
 import Contact from './_components/Contact';
 
+export const dynamic = 'force-dynamic';
+
 const page = async () => {
   await new Promise((resolve) => setTimeout(resolve, 3000));
 
