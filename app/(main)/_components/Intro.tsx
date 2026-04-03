@@ -1,12 +1,13 @@
 'use client';
 import { MdFileDownload } from 'react-icons/md';
 import Image from 'next/image';
+import { useState } from 'react';
 
 const Intro = () => {
+  const [buttonText, setButtonText] = useState('Resume');
   return (
     <header className="mt-9 relative w-[95vw] md:w-[75vw]">
       <div className="absolute inset-0 w-screen left-1/2 -translate-x-1/2 -z-10" />
-
       <div className="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-4 py-8 md:py-16 opacity-85 font-HeaderFont">
         <div className="flex flex-col z-10 w-full md:w-1/2">
           <h3 className="text-xl md:text-2xl font-medium tracking-wide opacity-90 mb-2">
@@ -21,8 +22,10 @@ const Intro = () => {
           <p className="text-base md:text-xl font-medium opacity-80 mt-6 max-w-md"></p>
 
           <div className="mt-10">
-            <button className="flex items-center gap-2 cursor-pointer px-6 py-3 bg-[#e9f286] text-black text-sm md:text-base border border-transparent dark:shadow-[4px_4px_0px_rgba(255,255,255,0.8)] shadow-[4px_4px_0px_#ccc8c8] rounded-md font-bold dark:hover:shadow-[6px_6px_0px_rgba(255,255,255,1)] hover:shadow-[6px_6px_0px_#6e6b6b] hover:-translate-y-0.5 transition-all w-fit">
-              Resume
+            <button
+              onClick={() => setButtonText('unavailable')}
+              className="flex items-center gap-2 cursor-pointer px-6 py-3 bg-[#e9f286] text-black text-sm md:text-base border border-transparent dark:shadow-[4px_4px_0px_rgba(255,255,255,0.8)] shadow-[4px_4px_0px_#ccc8c8] rounded-md font-bold dark:hover:shadow-[6px_6px_0px_rgba(255,255,255,1)] hover:shadow-[6px_6px_0px_#6e6b6b] hover:-translate-y-0.5 transition-all w-fit">
+              <span>{buttonText}</span>
               <MdFileDownload />
             </button>
           </div>
