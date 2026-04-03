@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'motion/react';
+import { IoArrowForwardSharp } from 'react-icons/io5';
 import Image from 'next/image';
 
 const Projects = () => {
@@ -8,19 +9,15 @@ const Projects = () => {
       label: 'portfolio',
       image: '/Frame1.png',
       title: 'PORTFOLIO',
-      link: 'www.google.com',
-      status: 'Working',
-    },
-    {
-      label: 'portfolio',
-      image: '/Frame1.png',
-      title: 'PORTFOLIO',
-      link: 'www.google.com',
+      link: 'https://github.com/vtslforge/My_portfolio',
+      status: 'Beta',
     },
   ];
   return (
     <main className="space-y-6">
-        <header className="sectionHeader">PROJECTS<span className='text-tech-hover-card-bg'>.</span></header>
+      <header className="sectionHeader">
+        PROJECTS<span className="text-tech-hover-card-bg">.</span>
+      </header>
       <section className="grid grid-cols-1 md:grid-cols-2 w-full gap-3">
         {projectDetails.map((project, index) => (
           <figure
@@ -43,7 +40,15 @@ const Projects = () => {
                 <div className="bg-white/20 p-2 px-4 rounded-full">{project.status}</div>
                 <div className="flex justify-between w-full">
                   <p className=" text-3xl font-bold opacity-75">{project.title}</p>
-                  <p className="cursor-pointer pointer-events-auto">{project.link}</p>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="cursor-pointer pointer-events-auto">
+                    <div className="bg-white/20 h-12 w-12  flex items-center justify-center rounded-full ">
+                      <IoArrowForwardSharp className="-rotate-45" />
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
