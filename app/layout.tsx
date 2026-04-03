@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Suspense } from 'react';
 import './styles/globals.css';
 import { Noto_Serif_Display } from 'next/font/google';
 import { Inter } from 'next/font/google';
@@ -46,7 +47,9 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="system"
           enableSystem>
-          <GoogleAnalytics measurementId={GA_MEASUREMENT_ID} />
+          <Suspense fallback={null}>
+            <GoogleAnalytics measurementId={GA_MEASUREMENT_ID} />
+          </Suspense>
           {children}
         </ThemeProvider>
       </body>
