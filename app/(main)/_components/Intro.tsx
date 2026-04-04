@@ -11,7 +11,7 @@ const Intro = () => {
       <div className="flex flex-col items-start gap-12 py-8 md:gap-10 md:py-14 xl:flex-row xl:items-center xl:justify-between xl:gap-12 xl:py-16 opacity-85 font-HeaderFont">
         <div className="flex flex-col z-10 w-full text-left xl:w-[52%]">
           <h3 className="text-xl md:text-2xl font-medium tracking-wide opacity-90 mb-2">
-            Hi, I&apos;m Vatsalya,
+            Hi, I&apos;m Vatsalya, Hi, an aspiring
           </h3>
           <h1 className="text-5xl sm:text-6xl md:text-[4.5rem] lg:text-[5rem] xl:text-[5.75rem] 2xl:text-[6.25rem] font-bold tracking-tighter leading-[1.05]">
             Fullstack
@@ -30,7 +30,7 @@ const Intro = () => {
             </button>
           </div>
         </div>
-        <div className="relative flex justify-center items-center w-full pt-4 min-h-[18rem] md:min-h-[22rem] lg:min-h-[24rem] xl:w-[48%] xl:justify-end xl:min-h-[26rem]">
+        <div className="relative flex justify-center items-center w-full pt-4 min-h-72 md:min-h-88 lg:min-h-96 xl:w-[48%] xl:justify-end xl:min-h-104">
           <div className="absolute w-65 h-65 md:w-80 md:h-80 lg:w-88 lg:h-88 xl:w-96 xl:h-96 border dark:border-white/30 border-gray-300 rounded-full translate-y-6 md:translate-y-4 lg:translate-y-5 xl:translate-y-6 -translate-x-6 md:-translate-x-4 lg:-translate-x-5 xl:-translate-x-6 z-0" />
           <div className="absolute top-[5%] md:top-4 right-[5%] md:right-8 z-20">
             <span className="block text-2xl font-light dark:text-white/30 text-gray-300 absolute right-8 top-0">
