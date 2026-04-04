@@ -12,21 +12,21 @@ const Projects = () => {
       link: 'https://github.com/vtslforge/My_portfolio',
       status: 'Beta',
     },
-        {
+    {
       label: 'shareApp',
       image: '/share.png',
       title: 'ShareApp (Unnamed)',
       // link: 'https://github.com/vtslforge/My_portfolio',
       status: 'Initial phase',
     },
-            {
+    {
       label: 'socialConnect',
       image: '/sc.png',
       title: 'socialConnect',
       link: 'https://github.com/vtslforge/socialConnect',
       status: 'beta',
     },
-                {
+    {
       label: 'collegeMedia',
       image: '/cm.png',
       title: 'collegeMedia',
