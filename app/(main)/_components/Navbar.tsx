@@ -10,8 +10,7 @@ const Navbar = () => {
   const pathname = usePathname();
   const { theme, setTheme } = useTheme();
   return (
-    <main
-      className="z-50 h-auto border  dark:bg-tech-cardDark-bg element fixed bottom-10 left-1/2 -translate-x-1/2 w-fit rounded-full p-1 flex items-center justify-center gap-1 bg-tech-cardLight-bg">
+    <main className="z-50 h-auto border  dark:bg-tech-cardDark-bg element fixed bottom-10 left-1/2 -translate-x-1/2 w-fit rounded-full p-1 flex items-center justify-center gap-1 bg-tech-cardLight-bg">
       <Link
         href="/"
         className={`h-9 flex items-center justify-center rounded-full aspect-square ${pathname === '/' ? '' : ''}`}>
