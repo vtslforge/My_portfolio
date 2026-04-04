@@ -12,6 +12,13 @@ const Projects = () => {
       link: 'https://github.com/vtslforge/My_portfolio',
       status: 'Beta',
     },
+        {
+      label: 'shareApp',
+      image: '/share.png',
+      title: 'ShareApp (Unnamed)',
+      // link: 'https://github.com/vtslforge/My_portfolio',
+      status: 'Initial phase',
+    },
   ];
   return (
     <main className="space-y-6">
