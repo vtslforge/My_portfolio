@@ -11,7 +11,7 @@ const Intro = () => {
       <div className="flex flex-col items-start gap-12 py-8 md:gap-10 md:py-14 xl:flex-row xl:items-center xl:justify-between xl:gap-12 xl:py-16 opacity-85 font-HeaderFont">
         <div className="flex flex-col z-10 w-full text-left xl:w-[52%]">
           <h3 className="text-xl md:text-2xl font-medium tracking-wide opacity-90 mb-2">
-            Hi, I&apos;m Vatsalya, Hi, an aspiring
+            Hi, I&apos;m Vatsalya, an aspiring
           </h3>
           <h1 className="text-5xl sm:text-6xl md:text-[4.5rem] lg:text-[5rem] xl:text-[5.75rem] 2xl:text-[6.25rem] font-bold tracking-tighter leading-[1.05]">
             Fullstack
