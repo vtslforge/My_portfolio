@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { RiHome3Line } from 'react-icons/ri';
 import { RiBloggerLine } from 'react-icons/ri';
 import { FaGithub } from 'react-icons/fa';
-import { GiMoon } from 'react-icons/gi';
+import { CgProfile } from 'react-icons/cg';
 import { useTheme } from 'next-themes';
 const Navbar = () => {
   const pathname = usePathname();
@@ -33,7 +33,7 @@ const Navbar = () => {
         type="button"
         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
         className="h-9 flex items-center cursor-pointer justify-center rounded-full aspect-square">
-        <GiMoon />
+        <CgProfile />{' '}
       </button>
     </main>
   );
