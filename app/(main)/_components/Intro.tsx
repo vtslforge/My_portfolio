@@ -9,7 +9,7 @@ const Intro = () => {
         className="mb-12 mt-3 border rounded-full p-3 px-6 ">
         Say hi on X
       </a>
-      <section className="text-center leading-none mb-24 uppercase">
+      <section className="text-center leading-none mb-30 uppercase">
         <h1 className="lg:text-[8rem] text-[3.5rem] md:text-[6.5rem] 2xl:text-[12rem] font-PoppinsFont font-black">
           Vatsalya
         </h1>
@@ -23,10 +23,10 @@ const Intro = () => {
           deliver real impact.
         </h2>
       </section>
-      <section className="flex font-PoppinsFont text-center justify-between flex-row w-full absolute bottom-0 mb-20 uppercase">
+      <section className="flex font-PoppinsFont text-center justify-between flex-row w-full absolute bottom-0 mb-30 uppercase">
         <article className="flex flex-col items-center gap-1">
           <IoLocationOutline className="text-green-600 text-2xl" />
-          <p className="text-[.6rem] md:text-[1rem]">BASED IN Banglore</p>
+          <p className="text-[.6rem] md:text-[1rem]">BASED IN Bangalore</p>
           <p className="text-[.6rem] md:text-[1rem]">INDIA</p>
         </article>
         <article className="flex flex-col items-center gap-1">
