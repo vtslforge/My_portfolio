@@ -36,9 +36,9 @@ const Projects = () => {
   ];
   return (
     <main className="space-y-6">
-      <header className="sectionHeader">
-        PROJECTS<span className="text-tech-hover-card-bg">.</span>
-      </header>
+      <header className="lg:text-[6rem] text-[2rem] md:text-[6.5rem] font-PoppinsFont font-black text-center">
+          PROJECTS<span className="text-tech-hover-card-bg font-DanceFont lowercase">LIST</span>
+        </header>
       <section className="grid grid-cols-1 md:grid-cols-2 w-full gap-3">
         {projectDetails.map((project, index) => (
           <figure

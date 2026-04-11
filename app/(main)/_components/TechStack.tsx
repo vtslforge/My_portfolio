@@ -57,9 +57,8 @@ const TechStack = () => {
 
   return (
     <main className="space-y-6">
-      <header className="sectionHeader">
-        TECH STACK<span className="text-tech-hover-card-bg">.</span>
-      </header>
+      <header className="lg:text-[6rem] text-[2rem] md:text-[6.5rem] font-PoppinsFont font-black text-center">
+          TECH<span className="text-tech-hover-card-bg font-DanceFont lowercase">STACK</span>        </header>
       <figure className="space-y-6 p-3">
         <h1 className="font-HeaderFont flex items-center gap-2">
           <TbLayoutDashboard className="text-yellow-400" />

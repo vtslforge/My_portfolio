@@ -7,9 +7,6 @@ import { FaGithub } from 'react-icons/fa6';
 const Contact = () => {
   return (
     <main className="space-y-6 mb-18 ">
-      <header className="sectionHeader">
-        CONTACT<span className="text-tech-hover-card-bg">.</span>
-      </header>
       <section className="h-auto w-full  flex flex-col md:flex-row gap-3 opacity-85">
         <article className="flex-1 border rounded-3xl flex flex-col items-center  justify-center gap-9 py-12">
           <p className="w-full h-fit px-3  text-center text-xl ">

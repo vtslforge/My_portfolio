@@ -4,6 +4,7 @@ import './styles/globals.css';
 import { Noto_Serif_Display } from 'next/font/google';
 import { Inter } from 'next/font/google';
 import { Poppins } from 'next/font/google';
+import { Dancing_Script } from 'next/font/google';
 import { ThemeProvider } from '@/components/providers/theme-provider';
 import GoogleAnalytics from '@/components/google-analytics';
 
@@ -20,15 +21,20 @@ const primaryFont = Noto_Serif_Display({
   subsets: ['latin'],
   variable: '--titleFont',
 });
+const dancing_Script = Dancing_Script({
+  subsets: ['latin'],
+  variable: '--dancing_Script',
+  weight:["400","500","600","700"]
+});
 
 const secondaryFont = Inter({
   subsets: ['latin'],
   variable: '--secondaryFont',
 });
 
-const HeaderFont = Poppins({
+const headerFont = Poppins({
   subsets: ['latin'],
-  variable: '--HeaderFont',
+  variable: '--headerFont',
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 });
 
@@ -41,7 +47,7 @@ export default function RootLayout({
     <html
       suppressHydrationWarning
       lang="en"
-      className={`antialiased ${primaryFont.variable} ${secondaryFont.variable} ${HeaderFont.variable}`}>
+      className={`antialiased ${primaryFont.variable} ${secondaryFont.variable} ${headerFont.variable} ${dancing_Script.variable}`}>
       <body className="min-h-full flex flex-col dark:bg-[#000000]">
         <ThemeProvider
           attribute="class"

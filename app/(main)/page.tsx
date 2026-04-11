@@ -12,10 +12,10 @@ const page = () => {
       <main className="flex flex-col items-center">
         <Intro />
         <section className="mt-12 flex w-[95vw] flex-col space-y-15 md:w-[75vw]">
-          <AboutSection />
+          <Projects />
           <TechStack />
           <GithubStat />
-          <Projects />
+          <AboutSection />
           <Contact />
         </section>
       </main>
