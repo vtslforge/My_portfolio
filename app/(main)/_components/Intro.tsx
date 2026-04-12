@@ -1,6 +1,8 @@
 'use client';
+
 import { IoLocationOutline } from 'react-icons/io5';
 import { GoStack } from 'react-icons/go';
+import { BsTwitterX } from "react-icons/bs";
 const Intro = () => {
   return (
     <main className="min-h-screen w-[95vw] flex flex-col justify-center items-center md:w-[75vw] relative">
@@ -8,8 +10,8 @@ const Intro = () => {
         target="_blank"
         rel="noopener noreferrer"
         href="https://x.com/ZoltXero"
-        className="mb-12 mt-6 border dark:border-[#1e1e1e] border-[#e4e4e4]  rounded-full p-3 px-6  ">
-        Say hi on X
+        className=" flex gap-3 items-center opacity-85 font-PoppinsFont hover:opacity-100 mb-12 mt-6 border dark:border-[#1e1e1e] border-[#e4e4e4]  rounded-full p-3 px-6  ">
+        Say hi on <BsTwitterX className='text-sm'/>
       </a>
       <section className="text-center leading-none mb-30 uppercase">
         <h1 className="lg:text-[8rem] text-[3.5rem] md:text-[6.5rem] 2xl:text-[12rem] font-PoppinsFont font-black">
@@ -25,7 +27,7 @@ const Intro = () => {
           deliver real impact.
         </h2>
       </section>
-      <section className="flex font-PoppinsFont text-center justify-between flex-row w-full bottom-0 mb-24 uppercase">
+      <section className="flex font-PoppinsFont text-center justify-between flex-row w-full bottom-0 pb-24 uppercase">
         <article className="flex flex-col items-center gap-1">
           <IoLocationOutline className="text-green-600 text-2xl" />
           <p className="text-[.6rem] md:text-[1rem]">BASED IN Bangalore</p>

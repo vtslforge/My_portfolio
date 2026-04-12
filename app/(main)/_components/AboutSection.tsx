@@ -9,8 +9,8 @@ const AboutSection = () => {
        
         </header>
         <div className="md:mt-24 w-full font-secondaryFont">
-          <p className=' text-[1rem] md:text-[1.5rem] lg:-text-[2rem] text-justify opacity-55'>
-            Self-taught — learned by breaking things, rebuilding them, and chasing what I
+          <p className=' text-[1rem] md:text-[1.5rem] lg:-text-[2rem] text-justify opacity-85'>
+            learned by breaking things, rebuilding them, and chasing what I
             didn’t understand. If I learn something, I build with it. Focused on scalable
             systems, clean code, and structure that lasts. I care about how things are
             built, not just that they work. Final year. Always learning. Always adapting.

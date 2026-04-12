@@ -45,7 +45,7 @@ const GithubStat = () => {
             href="https://github.com/vtslforge"
             target="_blank"
             rel="noreferrer"
-              className="flex items-center gap-2 font-HeaderFont cursor-pointer px-6 py-3 dark:text-white text-black text-sm md:text-base border border-gray-300 dark:border-white/60 dark:shadow-[2px_2px_0px_rgba(255,255,255,0.8)] shadow-[2px_2px_0px_#ccc8c8] rounded-full dark:hover:shadow-[3px_3px_0px_rgba(255,255,255,1)] hover:shadow-[3px_3px_0px_#6e6b6b] hover:-translate-y-0.5 transition-all w-fit">
+              className="opacity-85 hover:opacity-100 w-fit flex items-center gap-2 font-PoppinsFont cursor-pointer px-6 py-3 border dark:border-[#1e1e1e] border-[#e4e4e4] rounded-full">
             GitHub
             <IoLogoGithub />
           </a>
