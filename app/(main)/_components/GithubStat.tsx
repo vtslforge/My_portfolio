@@ -18,7 +18,7 @@ const GithubStat = () => {
   return (
     <section className="space-y-6">
       <section className="grid w-full gap-4 lg:grid-cols-[minmax(0,1.35fr)_minmax(320px,0.9fr)] lg:items-stretch">
-        <section className="w-full overflow-x-auto rounded-2xl border  p-2 sm:p-3">
+        <section className="w-full overflow-x-auto rounded-2xl border dark:border-[#1e1e1e] border-[#e4e4e4]   p-2 sm:p-3">
           <div className="min-w-max">
             <GitHubCalendar
               theme={theme}
@@ -31,7 +31,7 @@ const GithubStat = () => {
           </div>
         </section>
         <section className="flex w-full flex-col justify-between gap-3">
-          <pre className="min-h-42.5 overflow-hidden rounded-2xl border p-4 text-sm leading-7 text-white sm:p-5">
+          <pre className="min-h-42.5 overflow-hidden rounded-2xl border dark:border-[#1e1e1e] border-[#e4e4e4] p-4 text-sm leading-7 text-white sm:p-5">
             <code className="flex flex-wrap">
               <span className="text-emerald-400">console.log</span>
               <span className="text-gray-600">

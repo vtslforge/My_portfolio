@@ -6,45 +6,45 @@ import Image from 'next/image';
 const Projects = () => {
   const projectDetails = [
     {
-      label: 'portfolio',
+      label: 'Portfolio',
       image: '/Frame1.png',
-      title: 'PORTFOLIO',
+      title: 'Portfolio',
       link: 'https://github.com/vtslforge/My_portfolio',
       status: 'Beta',
     },
     {
-      label: 'shareApp',
+      label: 'ShareApp',
       image: '/share.png',
       title: 'ShareApp (Unnamed)',
       // link: 'https://github.com/vtslforge/My_portfolio',
       status: 'Initial phase',
     },
     {
-      label: 'socialConnect',
+      label: 'SocialConnect',
       image: '/sc.png',
-      title: 'socialConnect',
+      title: 'SocialConnect',
       link: 'https://github.com/vtslforge/socialConnect',
       status: 'beta',
     },
     {
-      label: 'collegeMedia',
+      label: 'CollegeMedia',
       image: '/cm.png',
-      title: 'collegeMedia',
+      title: 'CollegeMedia',
       link: 'https://github.com/vtslforge/collegeMedia',
       status: 'completed',
     },
   ];
   return (
     <main className="space-y-6">
-      <header className="lg:text-[6rem] text-[2rem] md:text-[6.5rem] font-PoppinsFont font-black text-center">
-          PROJECTS<span className="text-tech-hover-card-bg font-DanceFont lowercase">LIST</span>
+      <header className="lg:text-[6rem] text-[2rem]  md:text-[5rem] font-PoppinsFont font-black text-center uppercase">
+          Work<span className="text-tech-hover-card-bg font-DanceFont lowercase">Showcase</span>
         </header>
-      <section className="grid grid-cols-1 md:grid-cols-2 w-full gap-3">
+      <section className="grid md:mt-24 grid-cols-1 md:grid-cols-2 w-full gap-3">
         {projectDetails.map((project, index) => (
           <figure
             key={index}
-            className="aspect-square p-3 rounded-3xl dark:bg-project-cardDark bg-[#e8e4e4]">
-            <div className="relative aspect-square rounded-3xl overflow-hidden ">
+            className="aspect-square p-1 rounded-3xl dark:bg-[#545454] bg-[#e8e4e4]">
+            <div className="relative aspect-square rounded-3xl overflow-hidden bg-transparent ">
               <motion.div
                 whileHover={{
                   scale: 1.05,

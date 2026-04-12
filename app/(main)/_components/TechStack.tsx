@@ -56,11 +56,15 @@ const TechStack = () => {
   ];
 
   return (
-    <main className="space-y-6">
-      <header className="lg:text-[6rem] text-[2rem] md:text-[6.5rem] font-PoppinsFont font-black text-center">
-          TECH<span className="text-tech-hover-card-bg font-DanceFont lowercase">STACK</span>        </header>
-      <figure className="space-y-6 p-3">
-        <h1 className="font-HeaderFont flex items-center gap-2">
+    <main className="space-y-6 md:mt-24">
+      <header className="lg:text-[6rem] text-[2rem] md:text-[5rem] font-PoppinsFont font-black text-center">
+        TECH
+        <span className="text-tech-hover-card-bg font-DanceFont lowercase">
+          STACK
+        </span>
+      </header>
+      <figure className="space-y-6 p-3 md:mt-24">
+        <h1 className="font-PoppinsFont flex items-center gap-2">
           <TbLayoutDashboard className="text-yellow-400" />
           Frontend
         </h1>
@@ -73,7 +77,7 @@ const TechStack = () => {
                 className="aspect-square  dark:bg-tech-cardDark-bg bg-tech-cardLight-bg ">
                 <motion.div
                   whileHover="hovered"
-                  className="h-full w-full flex flex-col  items-center justify-center gap-2 dark:border-tech-cardDark-border border-tech-cardLight-border cursor-pointer overflow-hidden">
+                  className="h-full w-full flex flex-col  items-center justify-center gap-2  border-tech-cardLight-border cursor-pointer overflow-hidden">
                   <div className="h-full gap-3 w-full flex justify-center items-center flex-col relative overflow-hidden">
                     <motion.div
                       variants={{
@@ -108,7 +112,7 @@ const TechStack = () => {
         </section>
       </figure>
       <figure className="space-y-6 p-3">
-        <h1 className="font-HeaderFont flex items-center gap-2 ">
+        <h1 className="font-PoppinsFont flex items-center gap-2 ">
           <TbServerSpark className="text-blue-700" />
           Backend & Database
         </h1>
@@ -156,7 +160,7 @@ const TechStack = () => {
         </section>
       </figure>
       <figure className="space-y-6 p-3">
-        <h1 className="font-HeaderFont flex items-center gap-2">
+        <h1 className="font-PoppinsFont flex items-center gap-2">
           <HiOutlineWrenchScrewdriver className="text-emerald-700" />
           Tools & Technologies
         </h1>
