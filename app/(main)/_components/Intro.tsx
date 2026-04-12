@@ -23,7 +23,7 @@ const Intro = () => {
           deliver real impact.
         </h2>
       </section>
-      <section className="flex font-PoppinsFont text-center justify-between flex-row w-full absolute bottom-0 mb-30 uppercase">
+      <section className="flex font-PoppinsFont text-center justify-between flex-row w-full bottom-0 mb-24 uppercase">
         <article className="flex flex-col items-center gap-1">
           <IoLocationOutline className="text-green-600 text-2xl" />
           <p className="text-[.6rem] md:text-[1rem]">BASED IN Bangalore</p>
