@@ -59,10 +59,9 @@ const TechStack = () => {
     <main className="space-y-6 md:mt-24">
       <header className="lg:text-[6rem] text-[2rem] md:text-[5rem] font-PoppinsFont font-black text-center">
         TECH
-        <span className="text-tech-hover-card-bg font-DanceFont lowercase">
-          STACK
-        </span>
+        <span className="text-tech-hover-card-bg font-DanceFont lowercase">STACK</span>
       </header>
+      {/* -----------------------------------Frontend---------------------------------------------  */}
       <figure className="space-y-6 p-3 md:mt-24">
         <h1 className="font-PoppinsFont flex items-center gap-2">
           <TbLayoutDashboard className="text-yellow-400" />
@@ -111,6 +110,7 @@ const TechStack = () => {
           })}
         </section>
       </figure>
+      {/* -----------------------------------Backend & DB--------------------------------------------  */}
       <figure className="space-y-6 p-3">
         <h1 className="font-PoppinsFont flex items-center gap-2 ">
           <TbServerSpark className="text-blue-700" />
