@@ -7,6 +7,7 @@ import { Poppins } from 'next/font/google';
 import { Dancing_Script } from 'next/font/google';
 import { ThemeProvider } from '@/components/providers/theme-provider';
 import GoogleAnalytics from '@/components/google-analytics';
+import SmoothScrollProvider from '@/components/providers/smoothScroll';
 
 export const metadata: Metadata = {
   title: 'Vatsalya | Full Stack Developer',
@@ -24,7 +25,7 @@ const primaryFont = Noto_Serif_Display({
 const dancing_Script = Dancing_Script({
   subsets: ['latin'],
   variable: '--dancing_Script',
-  weight:["400","500","600","700"]
+  weight: ['400', '500', '600', '700'],
 });
 
 const secondaryFont = Inter({
@@ -49,15 +50,17 @@ export default function RootLayout({
       lang="en"
       className={`antialiased ${primaryFont.variable} ${secondaryFont.variable} ${headerFont.variable} ${dancing_Script.variable}`}>
       <body className="min-h-full flex flex-col dark:bg-[#000000]">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem>
-          <Suspense fallback={null}>
-            <GoogleAnalytics measurementId={GA_MEASUREMENT_ID} />
-          </Suspense>
-          {children}
-        </ThemeProvider>
+        <SmoothScrollProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem>
+            <Suspense fallback={null}>
+              <GoogleAnalytics measurementId={GA_MEASUREMENT_ID} />
+            </Suspense>
+            {children}
+          </ThemeProvider>
+        </SmoothScrollProvider>
       </body>
     </html>
   );

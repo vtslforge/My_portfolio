@@ -57,13 +57,13 @@ const TechStack = () => {
 
   return (
     <main className="space-y-6 md:mt-24">
-      <header className="lg:text-[6rem] text-[2rem] md:text-[5rem] font-PoppinsFont font-black text-center">
+      <header className="text-[2.25rem] md:text-[4.25rem] lg:text-[5.75rem] font-PoppinsFont font-black text-center">
         TECH
         <span className="text-tech-hover-card-bg font-DanceFont lowercase">STACK</span>
       </header>
       {/* -----------------------------------Frontend---------------------------------------------  */}
       <figure className="space-y-6 p-3 md:mt-24">
-        <h1 className="font-PoppinsFont flex items-center gap-2">
+        <h1 className="font-PoppinsFont flex items-center gap-2 text-[1.15rem] md:text-[1.35rem] lg:text-[1.5rem]">
           <TbLayoutDashboard className="text-yellow-400" />
           Frontend
         </h1>
@@ -97,10 +97,10 @@ const TechStack = () => {
                       className="relative z-10">
                       <Icon
                         style={{ color: skill.hoverColor }}
-                        className="text-3xl md:text-6xl"
+                        className="text-[1.9rem] md:text-[2.8rem] lg:text-[3.4rem]"
                       />
                     </motion.div>
-                    <p className="relative z-10 text-[12px] opacity-85 font-secondaryFont">
+                    <p className="relative z-10 text-[0.78rem] md:text-[0.92rem] lg:text-[1rem] opacity-85 font-secondaryFont">
                       {skill.label}
                     </p>
                   </div>
@@ -112,7 +112,7 @@ const TechStack = () => {
       </figure>
       {/* -----------------------------------Backend & DB--------------------------------------------  */}
       <figure className="space-y-6 p-3">
-        <h1 className="font-PoppinsFont flex items-center gap-2 ">
+        <h1 className="font-PoppinsFont flex items-center gap-2 text-[1.15rem] md:text-[1.35rem] lg:text-[1.5rem]">
           <TbServerSpark className="text-blue-700" />
           Backend & Database
         </h1>
@@ -146,10 +146,10 @@ const TechStack = () => {
                       className="relative z-10">
                       <Icon
                         style={{ color: skill.hoverColor }}
-                        className="text-3xl md:text-6xl"
+                        className="text-[1.9rem] md:text-[2.8rem] lg:text-[3.4rem]"
                       />
                     </motion.div>
-                    <p className="relative z-10 text-[12px] opacity-85 font-secondaryFont">
+                    <p className="relative z-10 text-[0.78rem] md:text-[0.92rem] lg:text-[1rem] opacity-85 font-secondaryFont">
                       {skill.label}
                     </p>
                   </div>
@@ -160,7 +160,7 @@ const TechStack = () => {
         </section>
       </figure>
       <figure className="space-y-6 p-3">
-        <h1 className="font-PoppinsFont flex items-center gap-2">
+        <h1 className="font-PoppinsFont flex items-center gap-2 text-[1.15rem] md:text-[1.35rem] lg:text-[1.5rem]">
           <HiOutlineWrenchScrewdriver className="text-emerald-700" />
           Tools & Technologies
         </h1>
@@ -194,10 +194,10 @@ const TechStack = () => {
                       className="relative z-10">
                       <Icon
                         style={{ color: skill.hoverColor }}
-                        className="text-3xl md:text-6xl"
+                        className="text-[1.9rem] md:text-[2.8rem] lg:text-[3.4rem]"
                       />
                     </motion.div>
-                    <p className="relative z-10 text-[12px] opacity-85 font-secondaryFont">
+                    <p className="relative z-10 text-[0.78rem] md:text-[0.92rem] lg:text-[1rem] opacity-85 font-secondaryFont">
                       {skill.label}
                     </p>
                   </div>

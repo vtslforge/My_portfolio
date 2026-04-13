@@ -3,25 +3,24 @@ import { FaInstagram } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 import { FaSquareXTwitter } from 'react-icons/fa6';
 import { FaGithub } from 'react-icons/fa6';
-import { SiGitconnected } from "react-icons/si";
-import { IoIosGitNetwork } from "react-icons/io";
+import { SiGitconnected } from 'react-icons/si';
+import { IoIosGitNetwork } from 'react-icons/io';
 
 const Contact = () => {
   return (
     <main className="space-y-6 mb-18 ">
-      <section className="h-auto w-full  flex flex-col md:flex-row gap-3 opacity-85 font-PoppinsFont">
-        <article className="flex-1 dark:border-[#1e1e1e] border-[#e4e4e4] border rounded-3xl flex flex-col items-center  justify-center gap-9 py-12">
-          <p className="flex items-center gap-3 text-[1rem] md:text-[1.5rem] lg:-text-[2rem] text-center opacity-85 px-6 ">
-            Connect with me<SiGitconnected className='text-orange-400' />
-
+      <section className="h-auto w-full flex flex-col md:flex-row gap-3 opacity-85 font-PoppinsFont">
+        <article className="flex-1 dark:border-[#1e1e1e] border-[#e4e4e4] border rounded-3xl flex flex-col items-center justify-center gap-9 py-12">
+          <p className="flex items-center gap-3 text-[1rem] md:text-[1.2rem] lg:text-[1.35rem] text-center opacity-85 px-6">
+            Connect with me<SiGitconnected className="text-orange-400" />
           </p>
-          <section className="flex gap-3 flex-wrap justify-center font-PoppinsFont ">
+          <section className="flex gap-3 flex-wrap justify-center font-PoppinsFont text-[0.92rem] md:text-[1rem] lg:text-[1.08rem]">
             <a
               href="https://www.instagram.com/vtsl.tsx/"
               target="_blank"
               rel="noopener noreferrer"
-              className=" opacity-75 hover:opacity-100 flex items-center gap-2 cursor-pointer px-6 py-3 border dark:border-[#1e1e1e] border-[#e4e4e4] rounded-full">
-              <FaInstagram className='text-red-600' />
+              className="opacity-75 hover:opacity-100 flex items-center gap-2 cursor-pointer px-6 py-3 border dark:border-[#1e1e1e] border-[#e4e4e4] rounded-full">
+              <FaInstagram className="text-red-600" />
               Instagram
             </a>
 
@@ -30,7 +29,7 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="opacity-75 hover:opacity-100 flex items-center gap-2 cursor-pointer px-6 py-3 border dark:border-[#1e1e1e] border-[#e4e4e4] rounded-full">
-              <FaLinkedin className='text-blue-600'/>
+              <FaLinkedin className="text-blue-600" />
               LinkedIn
             </a>
 
@@ -52,19 +51,21 @@ const Contact = () => {
             </a>
           </section>
         </article>
-        <article className="font-InterFont flex-1 border dark:border-[#1e1e1e] border-[#e4e4e4]  rounded-3xl justify-center items-center text-center flex flex-col gap-9 py-12">
-          <p className="flex items-center text-[1rem] md:text-[1.5rem] lg:-text-[2rem] text-center opacity-85 px-6 gap-3">Let’s work together<IoIosGitNetwork className='text-md text-green-500' /></p>
+        <article className="font-InterFont flex-1 border dark:border-[#1e1e1e] border-[#e4e4e4] rounded-3xl justify-center items-center text-center flex flex-col gap-9 py-12">
+          <p className="flex items-center text-[1rem] md:text-[1.2rem] lg:text-[1.35rem] text-center opacity-85 px-6 gap-3">
+            Let&apos;s work together
+            <IoIosGitNetwork className="text-[1rem] md:text-[1.15rem] lg:text-[1.25rem] text-green-500" />
+          </p>
           <a href="mailto:singhvatsalya16@gmail.com">
-            <button className="opacity-75 hover:opacity-85 flex items-center gap-2 font-PoppinsFont cursor-pointer px-6 py-3 border dark:border-[#1e1e1e] border-[#e4e4e4] rounded-full">
-              <MdOutlineMailOutline className='text-red-400' />
+            <button className="opacity-75 hover:opacity-85 flex items-center gap-2 font-PoppinsFont cursor-pointer px-6 py-3 border dark:border-[#1e1e1e] border-[#e4e4e4] rounded-full text-[0.92rem] md:text-[1rem] lg:text-[1.08rem]">
+              <MdOutlineMailOutline className="text-red-400" />
               Email
-
             </button>
           </a>
         </article>
       </section>
-      <p className="border-t border-sidebar-border text-sm pt-6 mb-12 opacity-55 text-center">
-        © Vatsalya 2026. All rights reserved.
+      <p className="border-t border-sidebar-border text-[0.8rem] md:text-[0.88rem] lg:text-[0.95rem] pt-6 mb-12 opacity-55 text-center">
+        &copy; Vatsalya 2026. All rights reserved.
       </p>
     </main>
   );

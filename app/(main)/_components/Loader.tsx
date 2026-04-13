@@ -19,7 +19,7 @@ const Loader = ({ isVisible }: LoaderProps) => {
         <div className="h-14 w-14 animate-pulse rounded-full border border-(--foreground)/20 bg-(--foreground)/6 p-2">
           <div className="h-full w-full animate-spin rounded-full border-2 border-(--foreground)/15 border-t-(--foreground)/70" />
         </div>
-        <p className="font-HeaderFont text-xs uppercase tracking-[0.45em] text-(--foreground)/60">
+        <p className="font-HeaderFont text-[0.72rem] md:text-[0.8rem] lg:text-[0.84rem] uppercase tracking-[0.45em] text-(--foreground)/60">
           Loading
         </p>
       </div>

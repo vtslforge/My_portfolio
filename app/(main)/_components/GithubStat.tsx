@@ -31,7 +31,7 @@ const GithubStat = () => {
           </div>
         </section>
         <section className="flex w-full flex-col justify-between gap-3">
-          <pre className="min-h-42.5 overflow-hidden rounded-2xl border dark:border-[#1e1e1e] border-[#e4e4e4] p-4 text-sm leading-7 text-white sm:p-5">
+          <pre className="min-h-42.5 overflow-hidden rounded-2xl border dark:border-[#1e1e1e] border-[#e4e4e4] p-4 text-[0.88rem] md:text-[0.95rem] lg:text-[1rem] leading-7 text-white sm:p-5">
             <code className="flex flex-wrap">
               <span className="text-emerald-400">console.log</span>
               <span className="text-gray-600">
@@ -45,7 +45,7 @@ const GithubStat = () => {
             href="https://github.com/vtslforge"
             target="_blank"
             rel="noreferrer"
-              className="opacity-85 hover:opacity-100 w-fit flex items-center gap-2 font-PoppinsFont cursor-pointer px-6 py-3 border dark:border-[#1e1e1e] border-[#e4e4e4] rounded-full">
+              className="opacity-85 hover:opacity-100 w-fit flex items-center gap-2 font-PoppinsFont cursor-pointer px-6 py-3 border dark:border-[#1e1e1e] border-[#e4e4e4] rounded-full text-[0.92rem] md:text-[1rem] lg:text-[1.08rem]">
             GitHub
             <IoLogoGithub />
           </a>

@@ -4,17 +4,20 @@ const AboutSection = () => {
   return (
     <main>
       <article className="flex flex-col items-center gap-6 md:mt-24">
-        <header className="lg:text-[6rem] text-[2rem] md:text-[5rem] font-PoppinsFont font-black">
-           QUICK<span className="text-tech-hover-card-bg font-DanceFont">glance</span>
-       
+        <header className="text-[2.25rem] md:text-[4.25rem] lg:text-[5.75rem] font-PoppinsFont font-black">
+          QUICK<span className="text-tech-hover-card-bg font-DanceFont">glance</span>
         </header>
         <div className="md:mt-24 w-full font-secondaryFont">
-          <p className=' text-[1rem] md:text-[1.5rem] lg:-text-[2rem] text-justify opacity-85'>
-            learned by breaking things, rebuilding them, and chasing what I
-            didn’t understand. If I learn something, I build with it. Focused on scalable
-            systems, clean code, and structure that lasts. I care about how things are
-            built, not just that they work. Final year. Always learning. Always adapting.
-            Ready to build real systems that solve real problems.
+          <p className="text-[1rem] md:text-[1.2rem] lg:text-[1.35rem] text-justify opacity-75">
+            My journey into technology began during my early school days, when computers
+            sparked a deep curiosity in me. Learned by breaking things, rebuilding them,
+            and chasing what I didn’t understand, I developed a passion for creating
+            meaningful solutions. If I learn something, I build with it—focusing on
+            scalable systems, clean code, and thoughtful architecture. I specialize in
+            Next.js, React, TypeScript, Node.js, and Tailwind CSS, with growing expertise
+            in Python, AI, and Machine Learning. A final-year developer, I am always
+            learning, always adapting, and driven to build real systems that solve
+            real-world problems.
           </p>
         </div>
       </article>

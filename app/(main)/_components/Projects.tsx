@@ -52,7 +52,7 @@ const Projects = () => {
   ];
   return (
     <main className="space-y-6">
-      <header className="lg:text-[6rem] text-[2rem]  md:text-[5rem] font-PoppinsFont font-black text-center uppercase">
+      <header className="text-[2.25rem] md:text-[4.25rem] lg:text-[5.75rem] font-PoppinsFont font-black text-center uppercase">
         Work
         <span className="text-tech-hover-card-bg font-DanceFont lowercase">Showcase</span>
       </header>
@@ -72,17 +72,17 @@ const Projects = () => {
             </div>
             <div className="z-10 pointer-events-none h-fit absolute w-full flex items-center justify-between px-3 font-PoppinsFont">
               <span
-                className="rounded-lg uppercase my-3 aspect-square h-16 justify-center w-16 p-1 text-2xl lg:text-4xl flex items-center text-white"
+                className="rounded-lg uppercase my-3 aspect-square h-16 justify-center w-16 p-1 text-[1.4rem] md:text-[1.7rem] lg:text-[2.15rem] flex items-center text-white"
                 style={project.logo.style}>
                 {project.logo.text}
               </span>
-              <span className="uppercase border p-1 rounded-full opacity-55  md:text-[.7rem] text-[.6rem] px-2">
+              <span className="uppercase border p-1 rounded-full opacity-55 text-[0.68rem] md:text-[0.8rem] lg:text-[0.88rem] px-2">
                 {project.status}
               </span>
             </div>
             <div className="p-3 gap-1 font-PoppinsFont justify-center z-10 pointer-events-none h-40 w-[50%] lg:w-[60%] absolute top-1/2 left-0 -translate-y-1/2 flex flex-col items-start">
-              <p className="opacity-85 uppercase">{project.label}</p>
-              <p className="text-[.65rem] md:text-[.85rem] opacity-55">
+              <p className="opacity-85 uppercase text-[0.95rem] md:text-[1.08rem] lg:text-[1.15rem]">{project.label}</p>
+              <p className="text-[0.72rem] md:text-[0.88rem] lg:text-[0.96rem] opacity-55">
                 {project.description}
               </p>
             </div>
