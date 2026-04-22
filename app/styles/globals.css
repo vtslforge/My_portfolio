@@ -27,7 +27,7 @@
 }
 
 .dark {
-  --background: oklch(0% 0 0);
+  --background: #18181b;
   --foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
 }

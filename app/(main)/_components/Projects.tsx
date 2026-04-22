@@ -60,7 +60,7 @@ const Projects = () => {
         {projectDetails.map((project, index) => (
           <figure
             key={index}
-            className="aspect-square dark:bg-tech-cardDark-bg bg-tech-cardLight-bg relative overflow-hidden pointer-events-none rounded-md">
+            className="aspect-square border dark:border-[#262626] border-[#e5e5e5] dark:bg-[#171717]  relative overflow-hidden pointer-events-none rounded-md">
             <div className="z-30 pointer-events-auto aspect-square h-[70%] translate-21 hover:translate-0 hover:h-full object-cover hover:rounded-sm transition-transform bg-transparent absolute bottom-0 right-0  rounded-full overflow-hidden  ">
               <Image
                 height={800}

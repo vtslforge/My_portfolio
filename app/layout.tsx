@@ -5,12 +5,12 @@ import { Noto_Serif_Display } from 'next/font/google';
 import { Inter } from 'next/font/google';
 import { Poppins } from 'next/font/google';
 import { Dancing_Script } from 'next/font/google';
-import { ThemeProvider } from '@/components/providers/theme-provider';
-import GoogleAnalytics from '@/components/google-analytics';
-import SmoothScrollProvider from '@/components/providers/smoothScroll';
+import { ThemeProvider } from '@/providers/theme-provider';
+import GoogleAnalytics from '@/providers/google-analytics';
+import SmoothScrollProvider from '@/providers/smoothScroll';
 
 export const metadata: Metadata = {
-  title: 'Vatsalya | Full Stack Developer',
+  title: 'Vatsalya Singh',
   description:
     'Portfolio of Vatsalya — building modern web apps with React, Next.js, and AI-driven solutions.',
 };
