@@ -12,7 +12,7 @@ const page = () => {
       <Navbar />
       <main className="w-[95vw] flex-col space-y-15 md:w-[75vw] flex mx-auto">
         {/* -------------------------About Header Title-------------------------------------------- */}
-        <section className="text-center leading-none mb-30 uppercase min-h-screen flex flex-col justify-center">
+        <section className="text-center leading-none uppercase min-h-screen flex flex-col justify-center">
           <h1 className="text-[3.5rem] md:text-[5.75rem] lg:text-[7.75rem] 2xl:text-[10.5rem] font-PoppinsFont font-black">
             aboutme
           </h1>
@@ -25,7 +25,7 @@ const page = () => {
         </section>
         {/* -------------------------about me description section--------------------------------------- */}
         <section className="flex flex-col items-center">
-          <h3 className="text-nowrap mt-9 text-[0.8rem] md:text-[1.05rem] lg:text-[1.2rem] opacity-55 tracking-[.1rem]">
+          <h3 className="text-nowrap text-[0.8rem] md:text-[1.05rem] lg:text-[1.2rem] opacity-55 tracking-[.1rem]">
             A LITTLE ABOUT ME
           </h3>
           <header className="text-[2.35rem] md:text-[3.4rem] lg:text-[4.2rem] font-PoppinsFont font-black text-center">
