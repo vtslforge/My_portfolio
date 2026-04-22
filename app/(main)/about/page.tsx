@@ -5,7 +5,6 @@ import { SiYoutubegaming } from 'react-icons/si';
 import { GiEvilBook } from 'react-icons/gi';
 import { PiCookingPot } from 'react-icons/pi';
 import { PiCoffee } from 'react-icons/pi';
-import Image from 'next/image';
 
 const page = () => {
   return (
@@ -123,18 +122,6 @@ const page = () => {
                   loading="lazy"
                   title="Spotify Playlist 2"
                 />
-              </div>
-              <div className="p-3 justify-evenly rounded-md dark:bg-tech-cardDark-bg bg-tech-cardLight-bg h-20 w-full font-PoppinsFont text-[1rem]  flex items-center px-3">
-                <p className='opacity-55'>Currently playing Where winds Meet</p>
-                <figure className=" h-20 w-50 relative">
-                  <Image
-                    src={'/wwm.png'}
-                    alt="Where Winds Meet"
-                    fill
-                    className=" absolute object-cover p-1 rounded-2xl"
-                    priority
-                  />
-                </figure>
               </div>
             </article>
           </section>

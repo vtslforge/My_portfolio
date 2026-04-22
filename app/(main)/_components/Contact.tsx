@@ -9,6 +9,7 @@ import { IoIosGitNetwork } from 'react-icons/io';
 const Contact = () => {
   return (
     <main className="space-y-6 mb-18 ">
+      
       <section className="h-auto w-full flex flex-col md:flex-row gap-3 opacity-85 font-PoppinsFont">
         <article className="flex-1 dark:border-[#1e1e1e] border-[#e4e4e4] border rounded-3xl flex flex-col items-center justify-center gap-9 py-12">
           <p className="flex items-center gap-3 text-[1rem] md:text-[1.2rem] lg:text-[1.35rem] text-center opacity-85 px-6">
@@ -67,6 +68,7 @@ const Contact = () => {
       <p className="border-t border-sidebar-border text-[0.8rem] md:text-[0.88rem] lg:text-[0.95rem] pt-6 mb-12 opacity-55 text-center">
         &copy; Vatsalya 2026. All rights reserved.
       </p>
+      
     </main>
   );
 };

@@ -10,20 +10,42 @@ import { BlurIn } from '@/animation/Blur-in';
 const Intro = () => {
   return (
     <main className="min-h-screen w-[95vw] flex flex-col justify-center items-center md:w-[75vw] relative">
-      <BlurIn className=''>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://x.com/ZoltXero"
-        className="flex gap-3 items-center opacity-85 font-PoppinsFont hover:opacity-100 mb-12 mt-6 border dark:border-[#1e1e1e] border-[#e4e4e4] rounded-full p-3 px-6 text-[0.95rem] md:text-[1.05rem] lg:text-[1.1rem]">
-        Say hi on
-        <BsTwitterX className="text-[0.95rem] md:text-[1.05rem] lg:text-[1.1rem]" />
-      </a></BlurIn>
+      {/* effect */}
+      <div className="min-h-screen w-full dark:bg-[#18181b] absolute -z-20 [--gridcol:#f0f0f0] dark:[--gridcol:#202121]">
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: ` linear-gradient(to right, var(--gridcol) 1px, transparent 1px), linear-gradient(to bottom, var(--gridcol) 1px, transparent 1px)`,
+            backgroundSize: '20px 30px',
+            WebkitMaskImage:'radial-gradient(ellipse 70% 60% at 50% 0%, #000 60%, transparent 100%)',
+            maskImage:'radial-gradient(ellipse 70% 60% at 50% 0%, #000 60%, transparent 100%)',
+          }}
+        />
+      </div>
+      <BlurIn className="">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://x.com/ZoltXero"
+          className="flex gap-3 items-center opacity-85 font-PoppinsFont hover:opacity-100 mb-12 mt-6 border dark:border-[#1e1e1e] border-[#e4e4e4] rounded-full p-3 px-6 text-[0.95rem] md:text-[1.05rem] lg:text-[1.1rem]">
+          Say hi on
+          <BsTwitterX className="text-[0.95rem] md:text-[1.05rem] lg:text-[1.1rem]" />
+        </a>
+      </BlurIn>
       <section className="text-center leading-none mb-30 uppercase">
-        <WordsPullUp  text={`Vatsalya\nsingh`} className="text-[3.5rem] md:text-[5.75rem] lg:text-[7.75rem] 2xl:text-[10.5rem] font-PoppinsFont font-black" />
-        <TypingEffect text="I design and build products that" className="text-nowrap mt-9 text-[0.8rem] md:text-[1.05rem] lg:text-[1.2rem] opacity-55 tracking-[.1rem]"/>
-        
-        <WordsPullUp text={`deliver  real  impact.`} className="text-nowrap text-[2.35rem] md:text-[3.4rem] lg:text-[4.2rem] font-light font-DanceFont lowercase mt-9 "/>
+        <WordsPullUp
+          text={`Vatsalya\nsingh`}
+          className="text-[3.5rem] md:text-[5.75rem] lg:text-[7.75rem] 2xl:text-[10.5rem] font-PoppinsFont font-black"
+        />
+        <TypingEffect
+          text="I design and build products that"
+          className="text-nowrap mt-9 text-[0.8rem] md:text-[1.05rem] lg:text-[1.2rem] opacity-55 tracking-[.1rem]"
+        />
+
+        <WordsPullUp
+          text={`deliver  real  impact.`}
+          className="text-nowrap text-[2.35rem] md:text-[3.4rem] lg:text-[4.2rem] font-light font-DanceFont lowercase mt-9 "
+        />
       </section>
       <section className="flex font-PoppinsFont text-center justify-between flex-row w-full bottom-0 pb-24 uppercase">
         <BlurIn className="flex flex-col items-center gap-1">
