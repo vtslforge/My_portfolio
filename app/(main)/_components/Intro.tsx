@@ -6,6 +6,7 @@ import { BsTwitterX } from 'react-icons/bs';
 import { WordsPullUp } from '@/animation/words-pull-up';
 import { TypingEffect } from '@/animation/typing-effect';
 import { BlurIn } from '@/animation/Blur-in';
+import { EyeCatchingButton } from '@/Ui/btn';
 
 const Intro = () => {
   return (
@@ -17,19 +18,23 @@ const Intro = () => {
           style={{
             backgroundImage: ` linear-gradient(to right, var(--gridcol) 1px, transparent 1px), linear-gradient(to bottom, var(--gridcol) 1px, transparent 1px)`,
             backgroundSize: '20px 30px',
-            WebkitMaskImage:'radial-gradient(ellipse 70% 60% at 50% 0%, #000 60%, transparent 100%)',
-            maskImage:'radial-gradient(ellipse 70% 60% at 50% 0%, #000 60%, transparent 100%)',
+            WebkitMaskImage:
+              'radial-gradient(ellipse 70% 60% at 50% 0%, #000 60%, transparent 100%)',
+            maskImage:
+              'radial-gradient(ellipse 70% 60% at 50% 0%, #000 60%, transparent 100%)',
           }}
         />
       </div>
-      <BlurIn className="">
+      <BlurIn className="mb-12 mt-12">
         <a
           target="_blank"
           rel="noopener noreferrer"
           href="https://x.com/ZoltXero"
-          className="flex gap-3 items-center opacity-85 font-PoppinsFont hover:opacity-100 mb-12 mt-6 border dark:border-[#1e1e1e] border-[#e4e4e4] rounded-full p-3 px-6 text-[0.95rem] md:text-[1.05rem] lg:text-[1.1rem]">
-          Say hi on
-          <BsTwitterX className="text-[0.95rem] md:text-[1.05rem] lg:text-[1.1rem]" />
+          className="">
+          <EyeCatchingButton className=''>
+            Say hi on
+            <BsTwitterX className="text-[0.95rem] md:text-[1.05rem] lg:text-[1.1rem]" />
+          </EyeCatchingButton>
         </a>
       </BlurIn>
       <section className="text-center leading-none mb-30 uppercase">

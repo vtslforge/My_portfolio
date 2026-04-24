@@ -57,7 +57,7 @@ const TechStack = () => {
 
   return (
     <main className="space-y-6 md:mt-24">
-      <header className="text-[2.25rem] md:text-[4.25rem] lg:text-[5.75rem] font-PoppinsFont font-black text-center">
+      <header className="text-[2.35rem] md:text-[3.4rem] lg:text-[4.2rem] font-PoppinsFont font-black text-center">
         TECH
         <span className="text-tech-hover-card-bg font-DanceFont lowercase">STACK</span>
       </header>

@@ -49,11 +49,11 @@ export default function RootLayout({
       suppressHydrationWarning
       lang="en"
       className={`antialiased ${primaryFont.variable} ${secondaryFont.variable} ${headerFont.variable} ${dancing_Script.variable}`}>
-      <body className="min-h-full flex flex-col dark:bg-[#000000]">
+      <body className="min-h-full flex flex-col">
         <SmoothScrollProvider>
           <ThemeProvider
             attribute="class"
-            defaultTheme="system"
+            defaultTheme="dark"
             enableSystem>
             <Suspense fallback={null}>
               <GoogleAnalytics measurementId={GA_MEASUREMENT_ID} />
