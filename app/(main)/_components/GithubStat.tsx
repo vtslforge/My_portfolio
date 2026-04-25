@@ -15,7 +15,7 @@ const GithubStat = () => {
   return (
     <section className="space-y-6">
       <section className="w-full gap-4 flex justify-center items-center">
-        <section className="overflow-x-scroll no-scrollbar flex justify-start">
+        <section className="overflow-y-scroll no-scrollbar flex justify-start">
           <div className="">
             <GitHubCalendar
               colorScheme={currentTheme === 'dark' ? 'dark' : 'light'}
