@@ -49,3 +49,10 @@ body {
     color 0.4s ease;
   scroll-behavior: smooth;
 }
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
+}

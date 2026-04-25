@@ -1,6 +1,7 @@
 'use client';
 import { easeIn, motion } from 'framer-motion';
 import Image from 'next/image';
+import { GoArrowUpRight } from "react-icons/go";
 
 const Projects = () => {
   type Logo = {
@@ -29,7 +30,7 @@ const Projects = () => {
       label: 'ShareApp',
       image: '/share.png',
       description: 'Text sharing app currently in very initial phase',
-      // link: 'https://github.com/vtslforge/My_portfolio',
+      link: 'https://github.com/vtslforge/Txtnok',
       status: 'Initial phase',
       logo: { text: 'sa', style: { backgroundColor: '#3f9e59' } },
     },
@@ -59,8 +60,11 @@ const Projects = () => {
         className="text-[2.35rem] md:text-[3.4rem] lg:text-[4.2rem] font-PoppinsFont font-black text-center uppercase">
         Work
         <span className="text-tech-hover-card-bg font-DanceFont lowercase">Showcase</span>
+        <h3 className="text-nowrap text-[0.8rem] md:text-[1.05rem] font-normal lg:text-[1.2rem] opacity-55 tracking-[.1rem]">
+            Projects i created
+          </h3>
       </motion.header>
-      <section className="grid md:mt-24 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-full gap-3">
+      <section className="grid md:mt-24 grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 w-full gap-3">
         {projectDetails.map((project, index) => (
           <motion.figure
             key={index}
@@ -70,10 +74,15 @@ const Projects = () => {
             /*--------------------------------------------           Individual cards           ----------------------------------------------------------- */
             className="aspect-square relative pointer-events-none rounded-4xl overflow-hidden flex flex-col p-2 justify-end">
             {/*-------------------------------------------           Inner card box            ----------------------------------------------------------- */}
-            <section  className="h-[40%] w-full bg-[#ffffff66] z-10 rounded-4xl p-3 relative">
-              {/* [clip-path:polygon(32.74%_30.8%,34.5%_23%,73.25%_23%,73.25%_73%,23.25%_73%,23.25%_30.8%)] */}
-              {/* <div className='h-10 w-10 bg-amber-700 absolute rounded-full '></div> */}
-              {/* <p className='text-black'>{project.label}</p> */}
+            <section  className="h-fit w-full z-10 space-y-3 rounded-4xl p-3 flex flex-col justify-between relative uppercase font-PoppinsFont overflow-hidden">
+              <article className='flex items-center justify-between'>
+              <p className='text-[.9rem] text-black w-fit rounded-4xl p-3  bg-white'>{project.label}</p>
+              <span className='flex gap-3 items-center justify-center'>
+              <p className='text-[.9rem] text-black w-fit rounded-4xl p-3 bg-[#ffffff]'>{project.status}</p>
+              <a className='pointer-events-auto' target="_blank" rel="noopener noreferrer" href={project.link} > <button className='text-black flex-1  h-12 aspect-square items-center justify-center flex rounded-full cursor-pointer p-3 bg-white'><GoArrowUpRight /></button></a>
+              </span>
+              </article>
+              {/* <div className='text-[.9rem] text-black w-full flex items-center justify-center rounded-4xl p-3 uppercase font-PoppinsFont bg-white'>Read more</div> */}
             </section>
             {/*-------------------------------------------           Image section            ----------------------------------------------------------- */}
             <Image
@@ -83,9 +92,10 @@ const Projects = () => {
               alt="profile images"
               className="rounded-4xl absolute top-1/2 left-1/2 object-cover -translate-x-1/2 -translate-y-1/2 bg-transparent"
             />
+            
           </motion.figure>
         ))}
-      </section>
+      </section> 
     </main>
   );
 };

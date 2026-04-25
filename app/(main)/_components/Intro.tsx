@@ -6,8 +6,6 @@ import { BsTwitterX } from 'react-icons/bs';
 import { WordsPullUp } from '@/animation/words-pull-up';
 import { TypingEffect } from '@/animation/typing-effect';
 import { BlurIn } from '@/animation/Blur-in';
-import { EyeCatchingButton } from '@/Ui/btn';
-
 const Intro = () => {
   return (
     <main className="min-h-screen w-[95vw] flex flex-col justify-center items-center md:w-[75vw] relative">
@@ -29,12 +27,11 @@ const Intro = () => {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://x.com/ZoltXero"
-          className="">
-          <EyeCatchingButton className=''>
-            Say hi on
-            <BsTwitterX className="text-[0.95rem] md:text-[1.05rem] lg:text-[1.1rem]" />
-          </EyeCatchingButton>
+          href="https://x.com/ZoltXero">
+          <button className='text-[0.95rem] md:text-[1.05rem] lg:text-[1.1rem] text-white font-InterFont flex items-center justify-between gap-3 rounded-full p-2 pl-6 cursor-pointer bg-[#212121]'>
+            Say hi on!
+            <span className='h-full rounded-full p-3 bg-[#c76baa]'><BsTwitterX className="text-[0.95rem] md:text-[1.05rem] lg:text-[1.1rem] dark:text-black" /></span>
+          </button>
         </a>
       </BlurIn>
       <section className="text-center leading-none mb-30 uppercase">

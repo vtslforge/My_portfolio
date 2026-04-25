@@ -1,58 +1,86 @@
 'use client';
-import { motion } from 'motion/react';
-import { FaHtml5 } from 'react-icons/fa';
-import { FaCss3Alt } from 'react-icons/fa';
-import { RiTailwindCssFill } from 'react-icons/ri';
-import { IoLogoJavascript } from 'react-icons/io5';
-import { SiTypescript } from 'react-icons/si';
-import { FaReact } from 'react-icons/fa';
-import { FiFramer } from 'react-icons/fi';
-import { RiNextjsFill } from 'react-icons/ri';
-import { FaNode } from 'react-icons/fa';
-import { SiExpress } from 'react-icons/si';
-import { BiLogoMongodb } from 'react-icons/bi';
-import { IoLogoFirebase } from 'react-icons/io5';
-import { TbApi } from 'react-icons/tb';
-import { SiMysql } from 'react-icons/si';
-import { FaPython } from 'react-icons/fa';
-import { SiRedux } from 'react-icons/si';
-import { FaGitAlt } from 'react-icons/fa';
-import { SiPostman } from 'react-icons/si';
-import { FaFigma } from 'react-icons/fa';
-import { RiNotionFill } from 'react-icons/ri';
-import { TbLayoutDashboard } from 'react-icons/tb';
-import { TbServerSpark } from 'react-icons/tb';
-import { HiOutlineWrenchScrewdriver } from 'react-icons/hi2';
+
+import { FaReact } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+import { IoLogoJavascript } from "react-icons/io5";
+import { BsTypescript } from "react-icons/bs";
+import { FiFramer } from "react-icons/fi";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaNode } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { SiMongodb } from "react-icons/si";
+import { FaGitAlt } from "react-icons/fa";
+import { IoLogoVercel } from "react-icons/io5";
+import { FaAws } from "react-icons/fa";
+import { FaPython } from "react-icons/fa";
+import { FaDocker } from "react-icons/fa";
+
+
+
 
 const TechStack = () => {
-  // Frontend
-  const skillsFrontend = [
-    { Icon: FaHtml5, label: 'HTML', hoverColor: '#E34F26' },
-    { Icon: FaCss3Alt, label: 'CSS', hoverColor: '#1572B6' },
-    { Icon: RiTailwindCssFill, label: 'Tailwind', hoverColor: '#06B6D4' },
-    { Icon: IoLogoJavascript, label: 'JavaScript', hoverColor: '#F7DF1E' },
-    { Icon: SiTypescript, label: 'TypeScript', hoverColor: '#3178C6' },
-    { Icon: FaReact, label: 'React', hoverColor: '#61DAFB' },
-    { Icon: RiNextjsFill, label: 'Next.js', hoverColor: '#FFFFFF' },
-    { Icon: FiFramer, label: 'Framer Motion', hoverColor: '#0055FF' },
-  ];
-  // Backend & Database
-  const skillsBackend = [
-    { Icon: FaNode, label: 'Node.js', hoverColor: '#5FA04E' },
-    { Icon: SiExpress, label: 'Express', hoverColor: '#FFFFFF' },
-    { Icon: BiLogoMongodb, label: 'MongoDB', hoverColor: '#47A248' },
-    { Icon: IoLogoFirebase, label: 'Firebase', hoverColor: '#FFCA28' },
-    { Icon: TbApi, label: 'REST APIs', hoverColor: '#38BDF8' },
-    { Icon: SiMysql, label: 'SQL', hoverColor: '#4479A1' },
-  ];
-  //Tools & Technologies
-  const ToolsTech = [
-    { Icon: FaPython, label: 'Python', hoverColor: '#3776AB' },
-    { Icon: SiRedux, label: 'Redux', hoverColor: '#764ABC' },
-    { Icon: FaGitAlt, label: 'Git & GitHub', hoverColor: '#F05032' },
-    { Icon: SiPostman, label: 'Postman', hoverColor: '#FF6C37' },
-    { Icon: FaFigma, label: 'Figma', hoverColor: '#F24E1E' },
-    { Icon: RiNotionFill, label: 'Notion', hoverColor: '#FFFFFF' },
+  const skillsset = [
+    {
+      label: 'React',
+      logo: <FaReact className="text-blue-600"/>,
+    },
+    {
+      label: 'NextJS',
+      logo: <RiNextjsFill className="text-white" />,
+    },
+    {
+      label: 'Javascript',
+      logo: <IoLogoJavascript className="text-yellow-400"/>,
+    },
+    {
+      label: 'Typescript',
+      logo: <BsTypescript className="text-blue-500"/>,
+    },
+    {
+      label: 'Motion',
+      logo: <FiFramer className="text-black"/>,
+    },
+    {
+      label: 'Tailwind',
+      logo: <RiTailwindCssFill className="text-cyan-400"/>,
+    },
+    {
+      label: 'NodeJS',
+      logo: <FaNode className="text-green-600"/>,
+    },
+    {
+      label: 'ExpressJS',
+      logo: <SiExpress className="text-gray-700"/>,
+    },
+    {
+      label: 'PostgreSQL',
+      logo: <BiLogoPostgresql className="text-blue-600"/>,
+    },
+    {
+      label: 'MongoDB',
+      logo: <SiMongodb className="text-green-500"/>,
+    },
+    {
+      label: 'Git',
+      logo: <FaGitAlt className="text-orange-600"/>,
+    },
+    {
+      label: 'Vercel',
+      logo: <IoLogoVercel className="text-black"/>,
+    },
+    {
+      label: 'Aws',
+      logo: <FaAws className="text-orange-500"/>,
+    },
+    {
+      label: 'Python',
+      logo: <FaPython className="text-blue-500"/>,
+    },
+    {
+      label: 'Docker',
+      logo: <FaDocker className="text-blue-500"/>,
+    },
   ];
 
   return (
@@ -60,152 +88,25 @@ const TechStack = () => {
       <header className="text-[2.35rem] md:text-[3.4rem] lg:text-[4.2rem] font-PoppinsFont font-black text-center">
         TECH
         <span className="text-tech-hover-card-bg font-DanceFont lowercase">STACK</span>
+        <h3 className="text-nowrap text-[0.8rem] md:text-[1.05rem] uppercase font-normal lg:text-[1.2rem] opacity-55 tracking-[.1rem]">
+          my skillset
+        </h3>
       </header>
-      {/* -----------------------------------Frontend---------------------------------------------  */}
-      <figure className="space-y-6 p-3 md:mt-24">
-        <h1 className="font-PoppinsFont flex items-center gap-2 text-[1.15rem] md:text-[1.35rem] lg:text-[1.5rem]">
-          <TbLayoutDashboard className="text-yellow-400" />
-          Frontend
-        </h1>
-        <section className="w-full h-auto grid items-center justify-center grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 gap-3">
-          {skillsFrontend.map((skill) => {
-            const Icon = skill.Icon;
-            return (
-              <div
-                key={skill.label}
-                className="aspect-square  dark:bg-tech-cardDark-bg bg-tech-cardLight-bg ">
-                <motion.div
-                  whileHover="hovered"
-                  className="h-full w-full flex flex-col  items-center justify-center gap-2  border-tech-cardLight-border cursor-pointer overflow-hidden">
-                  <div className="h-full gap-3 w-full flex justify-center items-center flex-col relative overflow-hidden">
-                    <motion.div
-                      variants={{
-                        hovered: {
-                          width: '100%',
-                          height: '3px',
-                          backgroundColor: '#F20AF5',
-                          boxShadow:
-                            '0 0 24px #F20AF5, 0 0 56px rgba(242, 10, 245, 1), 0 24px 44px 0 rgba(242, 10, 245, 0.98)',
-                        },
-                      }}
-                      initial={{ width: 0 }}
-                      transition={{ duration: 0.4, ease: 'easeInOut' }}
-                      className="absolute bottom-0 left-0"
-                    />
-                    <motion.div
-                      transition={{ duration: 0.2, ease: 'easeInOut' }}
-                      className="relative z-10">
-                      <Icon
-                        style={{ color: skill.hoverColor }}
-                        className="text-[1.9rem] md:text-[2.8rem] lg:text-[3.4rem]"
-                      />
-                    </motion.div>
-                    <p className="relative z-10 text-[0.78rem] md:text-[0.92rem] lg:text-[1rem] opacity-85 font-secondaryFont">
-                      {skill.label}
-                    </p>
-                  </div>
-                </motion.div>
-              </div>
-            );
-          })}
-        </section>
-      </figure>
-      {/* -----------------------------------Backend & DB--------------------------------------------  */}
-      <figure className="space-y-6 p-3">
-        <h1 className="font-PoppinsFont flex items-center gap-2 text-[1.15rem] md:text-[1.35rem] lg:text-[1.5rem]">
-          <TbServerSpark className="text-blue-700" />
-          Backend & Database
-        </h1>
-        <section className="w-full h-auto grid items-center justify-center grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 gap-3">
-          {skillsBackend.map((skill) => {
-            const Icon = skill.Icon;
-            return (
-              <div
-                key={skill.label}
-                className="aspect-square dark:bg-tech-cardDark-bg bg-tech-cardLight-bg ">
-                <motion.div
-                  whileHover="hovered"
-                  className="h-full w-full flex flex-col  items-center justify-center gap-2 dark:border-tech-cardDark-border border-tech-cardLight-border cursor-pointer overflow-hidden">
-                  <div className="h-full gap-3 w-full flex justify-center items-center flex-col relative overflow-hidden">
-                    <motion.div
-                      variants={{
-                        hovered: {
-                          width: '100%',
-                          height: '3px',
-                          backgroundColor: '#F20AF5',
-                          boxShadow:
-                            '0 0 24px #F20AF5, 0 0 56px rgba(242, 10, 245, 1), 0 24px 44px 0 rgba(242, 10, 245, 0.98)',
-                        },
-                      }}
-                      initial={{ width: 0 }}
-                      transition={{ duration: 0.4, ease: 'easeInOut' }}
-                      className="absolute bottom-0 left-0"
-                    />
-                    <motion.div
-                      transition={{ duration: 0.2, ease: 'easeInOut' }}
-                      className="relative z-10">
-                      <Icon
-                        style={{ color: skill.hoverColor }}
-                        className="text-[1.9rem] md:text-[2.8rem] lg:text-[3.4rem]"
-                      />
-                    </motion.div>
-                    <p className="relative z-10 text-[0.78rem] md:text-[0.92rem] lg:text-[1rem] opacity-85 font-secondaryFont">
-                      {skill.label}
-                    </p>
-                  </div>
-                </motion.div>
-              </div>
-            );
-          })}
-        </section>
-      </figure>
-      <figure className="space-y-6 p-3">
-        <h1 className="font-PoppinsFont flex items-center gap-2 text-[1.15rem] md:text-[1.35rem] lg:text-[1.5rem]">
-          <HiOutlineWrenchScrewdriver className="text-emerald-700" />
-          Tools & Technologies
-        </h1>
-        <section className="w-full h-auto grid items-center justify-center grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 gap-3">
-          {ToolsTech.map((skill) => {
-            const Icon = skill.Icon;
-            return (
-              <div
-                key={skill.label}
-                className="aspect-square dark:bg-tech-cardDark-bg bg-tech-cardLight-bg ">
-                <motion.div
-                  whileHover="hovered"
-                  className="h-full w-full flex flex-col  items-center justify-center gap-2 dark:border-tech-cardDark-border border-tech-cardLight-border cursor-pointer overflow-hidden">
-                  <div className="h-full gap-3 w-full flex justify-center items-center flex-col relative overflow-hidden">
-                    <motion.div
-                      variants={{
-                        hovered: {
-                          width: '100%',
-                          height: '3px',
-                          backgroundColor: '#F20AF5',
-                          boxShadow:
-                            '0 0 24px #F20AF5, 0 0 56px rgba(242, 10, 245, 1), 0 24px 44px 0 rgba(242, 10, 245, 0.98)',
-                        },
-                      }}
-                      initial={{ width: 0 }}
-                      transition={{ duration: 0.4, ease: 'easeInOut' }}
-                      className="absolute bottom-0 left-0"
-                    />
-                    <motion.div
-                      transition={{ duration: 0.2, ease: 'easeInOut' }}
-                      className="relative z-10">
-                      <Icon
-                        style={{ color: skill.hoverColor }}
-                        className="text-[1.9rem] md:text-[2.8rem] lg:text-[3.4rem]"
-                      />
-                    </motion.div>
-                    <p className="relative z-10 text-[0.78rem] md:text-[0.92rem] lg:text-[1rem] opacity-85 font-secondaryFont">
-                      {skill.label}
-                    </p>
-                  </div>
-                </motion.div>
-              </div>
-            );
-          })}
-        </section>
+      {/* -----------------------------------   Skill set   ---------------------------------------------  */}
+      <figure className="md:mt-24 flex items-center justify-center">
+        <article className="flex justify-center items-center gap-3 flex-wrap xl:w-[60%] font-PoppinsFont">
+        {skillsset.map((item, index) => {
+          
+          return (
+            <section
+              key={index}
+              className="p-3 gap-3 border dark:border-[#535353] rounded-4xl flex items-center justify-center">
+              <span className="text-2xl">{item.logo}</span>
+              <span className="opacity-85">{item.label}</span>
+            </section>
+          );
+        })}
+        </article>
       </figure>
     </main>
   );
