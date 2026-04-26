@@ -1,4 +1,5 @@
 'use client';
+import { easeIn, motion } from 'framer-motion';
 import Navbar from '../_components/Navbar';
 import { IoMusicalNotesOutline } from 'react-icons/io5';
 import { SiYoutubegaming } from 'react-icons/si';
@@ -25,15 +26,25 @@ const page = () => {
         </section>
         {/* -------------------------about me description section--------------------------------------- */}
         <section className="flex flex-col items-center">
-          <h3 className="text-nowrap text-[0.8rem] md:text-[1.05rem] lg:text-[1.2rem] opacity-55 tracking-[.1rem]">
+          <motion.h3
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ ease: easeIn, duration: 1 }}
+            viewport={{ amount: 0.9, once: true }}
+            className="text-nowrap text-[0.8rem] md:text-[1.05rem] lg:text-[1.2rem] opacity-55 tracking-[.1rem]">
             A LITTLE ABOUT ME
-          </h3>
-          <header className="text-[2.35rem] md:text-[3.4rem] lg:text-[4.2rem] font-PoppinsFont font-black text-center">
+          </motion.h3>
+          <motion.header
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ ease: easeIn, duration: 1 }}
+            viewport={{ amount: 0.9, once: true }}
+            className="text-[2.35rem] md:text-[3.4rem] lg:text-[4.2rem] font-PoppinsFont font-black text-center">
             Pleasure to meet
             <span className="text-tech-hover-card-bg font-DanceFont lowercase">
               <span> </span>you.
             </span>
-          </header>
+          </motion.header>
           <section className=" mt-12  w-full font-secondaryFont">
             <article className="text-[1rem] md:text-[1.2rem] lg:text-[1.35rem] text-justify opacity-75 flex flex-col gap-6">
               <p>

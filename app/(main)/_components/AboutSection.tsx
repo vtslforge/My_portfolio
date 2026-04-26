@@ -1,12 +1,20 @@
+'use client';
+
 import React from 'react';
+import { easeIn, motion } from 'framer-motion';
 
 const AboutSection = () => {
   return (
     <main>
       <article className="flex flex-col items-center gap-6 md:mt-24">
-        <header className="text-[2.35rem] md:text-[3.4rem] lg:text-[4.2rem] font-PoppinsFont font-black">
+        <motion.header
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ ease: easeIn, duration: 1 }}
+          viewport={{ amount: 0.9, once: true }}
+          className="text-[2.35rem] md:text-[3.4rem] lg:text-[4.2rem] font-PoppinsFont font-black">
           QUICK<span className="text-tech-hover-card-bg font-DanceFont">glance</span>
-        </header>
+        </motion.header>
         <div className="md:mt-24 w-full font-secondaryFont">
           <p className="text-[1rem] md:text-[1.2rem] lg:text-[1.35rem] text-justify opacity-75">
             My journey into technology began during my early school days, when computers
