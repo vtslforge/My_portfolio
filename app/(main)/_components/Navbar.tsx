@@ -10,7 +10,7 @@ const Navbar = () => {
   const pathname = usePathname();
   const { theme, setTheme } = useTheme();
   return (
-    <main className="z-50 h-auto border dark:border-[#1e1e1e] border-[#e4e4e4]   dark:bg-tech-cardDark-bg element fixed bottom-10 left-1/2 -translate-x-1/2 w-fit rounded-full p-1 flex items-center justify-center gap-1 bg-tech-cardLight-bg">
+    <main className="z-50 h-auto border dark:border-[#1e1e1e]/50 border-[#e4e4e4]/50 dark:bg-[#191919]/70 bg-white/70 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.2)] fixed bottom-10 left-1/2 -translate-x-1/2 w-fit rounded-full p-1 flex items-center justify-center gap-1">
       <Link
         href="/"
         className={`h-9 flex items-center justify-center rounded-full aspect-square ${pathname === '/' ? '' : ''}`}>
@@ -22,12 +22,6 @@ const Navbar = () => {
         className={`h-9 flex items-center justify-center rounded-full aspect-square ${pathname === '/about' ? '' : ''}`}>
         <GoPerson />
       </Link>
-
-      {/* <Link
-        href="/github"
-        className={`h-9 flex items-center justify-center rounded-full aspect-square ${pathname === '/github' ? '' : ''}`}>
-        <FaGithub />
-      </Link>  */}
 
       <button
         type="button"

@@ -10,7 +10,7 @@
   --font-PoppinsFont: var(--headerFont);
   --font-DanceFont: var(--dancing_Script);
 /*-------------------------- colors----------------------------------- */
-  --color-tech-hover-card-bg: #f20af5;
+  --color-tech-hover-card-bg: var(--foreground);
   --color-tech-cardDark-bg: #191919;
   --color-tech-cardLight-bg: #f6f6f6;
   --color-tech-cardDark-border: #141212;
@@ -21,15 +21,28 @@
 }
 
 :root {
-  --background: oklch(100% 0.00011 271.152);
-  --foreground: oklch(0% 0 0);  
-  --sidebar-border: oklch(0.922 0 0);
+  --background: #fafafa;
+  --foreground: #111111;  
+  --sidebar-border: rgba(0, 0, 0, 0.08);
+  --grid-color: rgba(0, 0, 0, 0.03);
 }
 
 .dark {
-  --background: #18181b;
-  --foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
+  --background: #000000;
+  --foreground: #ffffff;
+  --sidebar-border: rgba(255, 255, 255, 0.08);
+  --grid-color: rgba(255, 255, 255, 0.03);
+}
+
+body {
+  background-color: var(--background) !important;
+  color: var(--foreground) !important;
+  background-image: 
+    linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px) !important;
+  background-size: 40px 40px !important;
+  background-attachment: fixed !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 html {
@@ -55,4 +68,24 @@ body {
 .no-scrollbar {
   -ms-overflow-style: none;  /* IE/Edge */
   scrollbar-width: none;     /* Firefox */
+}
+
+.github-calendar-shell,
+.github-calendar-shell .react-activity-calendar__scroll-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: hidden;
+}
+
+.github-calendar-shell::-webkit-scrollbar,
+.github-calendar-shell .react-activity-calendar__scroll-container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+  background: transparent;
+}
+
+.github-calendar-shell .react-activity-calendar__scroll-container::-webkit-scrollbar-thumb,
+.github-calendar-shell .react-activity-calendar__scroll-container::-webkit-scrollbar-track {
+  background: transparent;
 }

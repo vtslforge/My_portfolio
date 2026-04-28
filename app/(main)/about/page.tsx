@@ -1,149 +1,151 @@
 'use client';
-import { easeIn, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Navbar from '../_components/Navbar';
 import { IoMusicalNotesOutline } from 'react-icons/io5';
 import { SiYoutubegaming } from 'react-icons/si';
 import { GiEvilBook } from 'react-icons/gi';
 import { PiCookingPot } from 'react-icons/pi';
 import { PiCoffee } from 'react-icons/pi';
+import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
 
-const page = () => {
+const AboutPage = () => {
+  const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setMounted(true);
+  }, []);
+  const spotifyTheme = mounted && resolvedTheme === 'light' ? '1' : '0';
+
   return (
     <>
       <Navbar />
-      <main className="w-[95vw] flex-col space-y-15 md:w-[75vw] flex mx-auto">
-        {/* -------------------------About Header Title-------------------------------------------- */}
-        <section className="text-center leading-none uppercase min-h-screen flex flex-col justify-center">
-          <h1 className="text-[3.5rem] md:text-[5.75rem] lg:text-[7.75rem] 2xl:text-[10.5rem] font-PoppinsFont font-black">
-            aboutme
-          </h1>
-          <h3 className="text-nowrap mt-9 text-[0.8rem] md:text-[1.05rem] lg:text-[1.2rem] opacity-55 tracking-[.1rem]">
-            BEHIND THE SCREEN
-          </h3>
-          <h2 className="text-nowrap text-[2.35rem] md:text-[3.4rem] lg:text-[4.2rem] font-light font-DanceFont lowercase mt-9 ">
-            the mind within.
-          </h2>
-        </section>
-        {/* -------------------------about me description section--------------------------------------- */}
-        <section className="flex flex-col items-center">
-          <motion.h3
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ ease: easeIn, duration: 1 }}
-            viewport={{ amount: 0.9, once: true }}
-            className="text-nowrap text-[0.8rem] md:text-[1.05rem] lg:text-[1.2rem] opacity-55 tracking-[.1rem]">
-            A LITTLE ABOUT ME
-          </motion.h3>
-          <motion.header
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ ease: easeIn, duration: 1 }}
-            viewport={{ amount: 0.9, once: true }}
-            className="text-[2.35rem] md:text-[3.4rem] lg:text-[4.2rem] font-PoppinsFont font-black text-center">
-            Pleasure to meet
-            <span className="text-tech-hover-card-bg font-DanceFont lowercase">
-              <span> </span>you.
-            </span>
-          </motion.header>
-          <section className=" mt-12  w-full font-secondaryFont">
-            <article className="text-[1rem] md:text-[1.2rem] lg:text-[1.35rem] text-justify opacity-75 flex flex-col gap-6">
-              <p>
-                My journey into technology began during my early school days, when
-                computers sparked a deep curiosity in me. Fascinated by how applications
-                run and systems function, I was inspired to explore the world of
-                technology—a passion that continues to drive my learning today.
-              </p>
+      <main className="flex flex-col items-center w-full overflow-x-hidden min-h-screen">
+        <section className="flex flex-col gap-16 w-full max-w-5xl mx-auto px-4 sm:px-6 md:px-8 pb-32">
+          
+          {/* -------------------------About Header Title-------------------------------------------- */}
+          <section className="text-center min-h-[40vh] flex flex-col justify-center items-center relative mt-24">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-blue-500/10 blur-[100px] rounded-full pointer-events-none" />
+            
+            <motion.div 
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="z-10 flex flex-col items-center"
+            >
+              <div className="flex items-center gap-2 px-4 py-1.5 rounded-full border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 backdrop-blur-sm mb-6">
+                <span className="text-[0.65rem] font-semibold tracking-[0.3em] text-zinc-600 dark:text-zinc-300 uppercase">Behind the surface</span>
+              </div>
 
-              <p>
-                I enjoy diving deep into the logic behind what I build, striving to create
-                efficient and scalable systems. My goal is to become a well-rounded
-                developer capable of delivering complete solutions, from system design to
-                full-stack development.
-              </p>
+              <h1 className="text-5xl md:text-7xl lg:text-[6rem] font-InterFont font-black tracking-tighter text-foreground z-10">
+                The Architecture.
+              </h1>
+            </motion.div>
+          </section>
 
+          {/* -------------------------about me description section--------------------------------------- */}
+          <section className="flex flex-col border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 backdrop-blur-md rounded-[2rem] p-8 md:p-12 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/5 blur-[80px] pointer-events-none rounded-full" />
+            
+            <h3 className="text-[0.65rem] font-semibold font-InterFont uppercase tracking-[0.3em] text-zinc-500 mb-8 z-10 w-full border-b border-black/10 dark:border-white/10 pb-4">
+              System Documentation
+            </h3>
+            
+            <article className="text-sm md:text-base text-zinc-600 dark:text-zinc-400 font-InterFont leading-relaxed flex flex-col gap-6 z-10">
               <p>
-                I am also expanding my expertise into AI and Machine Learning while
-                staying aligned with modern technological advancements. Beyond coding, I
-                enjoy cooking, listening to music, writing stories, and gaming.
+                My journey into technology began during my early school days, when computers sparked a deep curiosity in me. Fascinated by how applications run and systems function, I was inspired to explore the lower-level mechanics—a drive that formed the foundation of my engineering mindset today.
+              </p>
+              <p>
+                I thrive on diving deep into the logic behind what I build. I don&apos;t just want things to work; I demand efficient, highly optimized, and scalable systems. My primary directive is to operate as a well-rounded developer capable of executing complete architectures, spanning from database design to high-performance client rendering.
+              </p>
+              <p>
+                Currently, I am expanding my domain expertise into AI and Machine Learning to stay ahead of the computational curve. When I step away from the terminal, you can find me analyzing music patterns, writing fiction, cooking, or immersing myself in strategy and role-playing games.
               </p>
             </article>
           </section>
-        </section>
-        {/* ---------------------------------Human behind it------------------------------------*/}
-        <section>
-          <h3 className="text-nowrap mt-9 text-[0.8rem] md:text-[1.05rem] lg:text-[1.2rem] opacity-55 tracking-[.1rem]">
-            THE HUMAN BEHIND IT.
-          </h3>
-          <section className="flex w-full h-auto flex-col mt-3 md:flex-row gap-3">
-            <article className="grid grid-cols-2 lg:grid-cols-2 gap-3 flex-1 font-PoppinsFont text-[.8rem] ">
-              <div className="rounded-md flex flex-col p-3 gap-3 dark:bg-tech-cardDark-bg bg-tech-cardLight-bg">
-                <IoMusicalNotesOutline className="text-lg text-orange-400" />
-                <p className="text-[1rem]">Music</p>
-                <p className="opacity-75">Synthwave & R&B Enthusiast</p>
-              </div>
-              <div className="rounded-md flex flex-col p-3 gap-3 dark:bg-tech-cardDark-bg bg-tech-cardLight-bg">
-                <GiEvilBook className="text-lg text-blue-600" />
-                <p className="text-[1rem]">Story Writing</p>
-                <p className="opacity-75">Fictional Novels & Short Stories</p>
-              </div>
-              <div className="rounded-md flex flex-col p-3 gap-3 dark:bg-tech-cardDark-bg bg-tech-cardLight-bg">
-                <SiYoutubegaming className="text-lg text-green-600" />
-                <p className="text-[1rem]">Gaming</p>
-                <p className="opacity-75">Immersive Stories, RPGs & Strategy</p>
-              </div>
-              <div className="rounded-md flex flex-col p-3 gap-3 dark:bg-tech-cardDark-bg bg-tech-cardLight-bg ">
-                <PiCookingPot className="text-lg text-red-500" />
-                <p className="text-[1rem]">Cooking</p>
-                <p className="opacity-75">
-                  Well, I need to survive… and I enjoy experimenting with new recipes
-                </p>
-              </div>
-              <div className="rounded-md flex flex-col p-3 gap-3 col-span-2 dark:bg-tech-cardDark-bg bg-tech-cardLight-bg">
-                <PiCoffee className="text-lg text-amber-300" />
-                <p className="text-[1rem]">Coffee</p>
-                <p className="opacity-75">My personal kerosene</p>
-              </div>
-            </article>
-            <article className="flex-1 space-y-4">
-              {/* Playlist 1 */}
-              <div className="overflow-hidden rounded-2xl bg-transparent">
-                <iframe
-                  data-testid="embed-iframe-1"
-                  src="https://open.spotify.com/embed/playlist/0pwXPzYUlL9bN9Yh4jv01v?utm_source=generator&theme=2"
-                  width="100%"
-                  height="152"
-                  className="block w-full border-0"
-                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                  allowFullScreen
-                  loading="lazy"
-                  title="Spotify Playlist 1"
-                />
+
+          {/* ---------------------------------Human behind it------------------------------------*/}
+          <section className="flex flex-col gap-6 w-full mt-8">
+            <h3 className="text-[0.65rem] font-semibold font-InterFont uppercase tracking-[0.3em] text-zinc-500 mb-2 border-b border-black/10 dark:border-white/10 pb-4">
+              Human Peripherals
+            </h3>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
+              {/* Interests Grid */}
+              <div className="grid grid-cols-2 gap-4">
+                <div className="flex flex-col p-6 rounded-[1.5rem] border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group">
+                  <IoMusicalNotesOutline className="text-2xl text-zinc-500 group-hover:text-blue-500 dark:group-hover:text-blue-400 mb-4 transition-colors" />
+                  <p className="font-semibold text-foreground text-xs mb-1 uppercase tracking-wider">Music</p>
+                  <p className="text-xs text-zinc-500">Synthwave & R&B</p>
+                </div>
+                
+                <div className="flex flex-col p-6 rounded-[1.5rem] border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group">
+                  <GiEvilBook className="text-2xl text-zinc-500 group-hover:text-purple-500 dark:group-hover:text-purple-400 mb-4 transition-colors" />
+                  <p className="font-semibold text-foreground text-xs mb-1 uppercase tracking-wider">Writing</p>
+                  <p className="text-xs text-zinc-500">Fiction Novels</p>
+                </div>
+                
+                <div className="flex flex-col p-6 rounded-[1.5rem] border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group">
+                  <SiYoutubegaming className="text-2xl text-zinc-500 group-hover:text-emerald-500 dark:group-hover:text-emerald-400 mb-4 transition-colors" />
+                  <p className="font-semibold text-foreground text-xs mb-1 uppercase tracking-wider">Gaming</p>
+                  <p className="text-xs text-zinc-500">RPGs & Strategy</p>
+                </div>
+                
+                <div className="flex flex-col p-6 rounded-[1.5rem] border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group">
+                  <PiCookingPot className="text-2xl text-zinc-500 group-hover:text-orange-500 dark:group-hover:text-orange-400 mb-4 transition-colors" />
+                  <p className="font-semibold text-foreground text-xs mb-1 uppercase tracking-wider">Cooking</p>
+                  <p className="text-xs text-zinc-500">System Fuel</p>
+                </div>
+
+                <div className="flex p-6 rounded-[1.5rem] border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group col-span-2 items-center gap-6">
+                  <PiCoffee className="text-3xl text-zinc-500 group-hover:text-amber-500 dark:group-hover:text-amber-400 transition-colors" />
+                  <div>
+                    <p className="font-semibold text-foreground text-xs mb-1 uppercase tracking-wider">Coffee</p>
+                    <p className="text-xs text-zinc-500">My personal kerosene</p>
+                  </div>
+                </div>
               </div>
 
-              {/* Playlist 2 */}
-              <div className="overflow-hidden rounded-2xl bg-transparent">
-                <iframe
-                  data-testid="embed-iframe-2"
-                  src="https://open.spotify.com/embed/playlist/2kCLN1MBkhUdE2Taq9Ha5z?utm_source=generator&theme=1"
-                  width="100%"
-                  height="152"
-                  className="block w-full border-0"
-                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                  allowFullScreen
-                  loading="lazy"
-                  title="Spotify Playlist 2"
-                />
+              {/* Spotify Embeds */}
+              <div className="flex flex-col gap-4">
+                <div className="overflow-hidden rounded-[1.5rem] border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 grayscale-[80%] opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+                  <iframe
+                    data-testid="embed-iframe-1"
+                    src={`https://open.spotify.com/embed/playlist/0pwXPzYUlL9bN9Yh4jv01v?utm_source=generator&theme=${spotifyTheme}`}
+                    width="100%"
+                    height="152"
+                    className="block w-full border-0"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    allowFullScreen
+                    loading="lazy"
+                    title="Spotify Playlist 1"
+                  />
+                </div>
+                <div className="overflow-hidden rounded-[1.5rem] border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 grayscale-[80%] opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+                  <iframe
+                    data-testid="embed-iframe-2"
+                    src={`https://open.spotify.com/embed/playlist/2kCLN1MBkhUdE2Taq9Ha5z?utm_source=generator&theme=${spotifyTheme}`}
+                    width="100%"
+                    height="152"
+                    className="block w-full border-0"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    allowFullScreen
+                    loading="lazy"
+                    title="Spotify Playlist 2"
+                  />
+                </div>
               </div>
-            </article>
+            </div>
           </section>
+
+          <h3 className="text-center mt-20 mb-12 text-[0.65rem] uppercase tracking-[0.3em] text-zinc-600 font-InterFont border-t border-black/5 dark:border-white/5 pt-12">
+            System initialization complete.
+          </h3>
         </section>
-        {/* -------------------------------------------Footer------------------------------------------- */}
-        <h3 className="text-nowrap mx-auto mt-12 mb-36 text-[0.8rem] md:text-[1.05rem] lg:text-[1.2rem] opacity-55 tracking-[.1rem] uppercase">
-          More To come
-        </h3>
       </main>
     </>
   );
 };
 
-export default page;
+export default AboutPage;

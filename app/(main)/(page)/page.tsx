@@ -1,21 +1,16 @@
-import AboutSection from '../_components/AboutSection';
-import Intro from '../_components/Intro';
-import TechStack from '../_components/TechStack';
-import GithubStat from '../_components/GithubStat';
-import Projects from '../_components/Projects';
-import Contact from '../_components/Contact';
+import HeroSection from '../_components/HeroSection';
+import ProjectsSection from '../_components/ProjectsSection';
+import TechStackSection from '../_components/TechStackSection';
+import ContactDock from '../_components/ContactDock';
 
 const page = () => {
   return (
-
-      <main className="flex flex-col items-center">
-        <Intro />
-        <section className="flex w-[95vw] flex-col space-y-15 md:w-[75vw]">
-          <Projects />
-          <TechStack />
-          <GithubStat />
-          <AboutSection />
-          <Contact />
+      <main className="flex flex-col items-center w-full overflow-x-hidden min-h-screen">
+        <section className="flex w-full flex-col gap-0 w-full mb-12">
+          <HeroSection />
+          <ProjectsSection />
+          <TechStackSection />
+          <ContactDock />
         </section>
       </main>
   );

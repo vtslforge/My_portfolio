@@ -1,0 +1,285 @@
+﻿[
+  {
+    "filePath": "V:\\vtslforge\\Projects\\My_portfolio\\Ui\\btn.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "V:\\vtslforge\\Projects\\My_portfolio\\animation\\Blur-in.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "V:\\vtslforge\\Projects\\My_portfolio\\animation\\typing-effect.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "V:\\vtslforge\\Projects\\My_portfolio\\animation\\words-pull-up.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "V:\\vtslforge\\Projects\\My_portfolio\\app\\(main)\\(page)\\layout.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "V:\\vtslforge\\Projects\\My_portfolio\\app\\(main)\\(page)\\page.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "V:\\vtslforge\\Projects\\My_portfolio\\app\\(main)\\_components\\Navbar.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "V:\\vtslforge\\Projects\\My_portfolio\\app\\(main)\\_components\\PageMotionShell.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "V:\\vtslforge\\Projects\\My_portfolio\\app\\(main)\\_components\\PremiumDock.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "V:\\vtslforge\\Projects\\My_portfolio\\app\\(main)\\_components\\PremiumHero.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "V:\\vtslforge\\Projects\\My_portfolio\\app\\(main)\\_components\\PremiumProjects.tsx",
+    "messages": [
+      {
+        "ruleId": "@typescript-eslint/no-unused-vars",
+        "severity": 1,
+        "message": "'easeIn' is defined but never used.",
+        "line": 2,
+        "column": 18,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 2,
+        "endColumn": 24,
+        "suggestions": [
+          {
+            "messageId": "removeUnusedVar",
+            "data": { "varName": "easeIn" },
+            "fix": { "range": [29, 37], "text": "" },
+            "desc": "Remove unused variable \"easeIn\"."
+          }
+        ]
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "'use client';\nimport { motion, easeIn } from 'framer-motion';\nimport Image from 'next/image';\n\nconst PremiumProjects = () => {\n  const projectDetails = [\n    {\n      label: 'Portfolio / V1',\n      stack: ['Next.js', 'Motion'],\n      image: '/vtslx.png',\n      description: 'A cutting-edge portfolio architecture demonstrating high-performance React patterns.',\n      link: 'https://github.com/vtslforge/My_portfolio',\n    },\n    {\n      label: 'ShareApp Console',\n      stack: ['React', 'TypeScript'],\n      image: '/shareapp.png',\n      description: 'Zero-latency ephemeral text sharing built for rapid data traversal.',\n      link: 'https://github.com/vtslforge/Txtnok',\n    },\n    {\n      label: 'SocialConnect Hub',\n      stack: ['Next.js', 'PostgreSQL'],\n      image: '/capp.png',\n      description: 'Centralized telemetry and insight generation across integrated social platforms.',\n      link: 'https://github.com/vtslforge/socialConnect',\n    },\n  ];\n\n  return (\n    <section className=\"w-full flex flex-col py-32 items-center relative\">\n      <div className=\"w-full flex items-center justify-between gap-6 mb-16 max-w-5xl px-4\">\n        <h2 className=\"text-[0.7rem] font-semibold font-InterFont uppercase tracking-[0.3em] text-zinc-600 dark:text-zinc-400\">\n          Featured Deployments\n        </h2>\n        <div className=\"h-[1px] auto flex-1 bg-gradient-to-r from-black/10 dark:from-white/10 to-transparent\" />\n      </div>\n\n      <div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl px-4\">\n        {projectDetails.map((project, index) => (\n          <motion.div\n            key={index}\n            initial={{ opacity: 0, scale: 0.98 }}\n            whileInView={{ opacity: 1, scale: 1 }}\n            transition={{ duration: 0.5, delay: index * 0.1 }}\n            viewport={{ once: true }}\n            className=\"group relative flex flex-col border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/60 backdrop-blur-md rounded-[1rem] overflow-hidden hover:border-blue-500/40 transition-all duration-300\"\n          >\n            <div className=\"absolute inset-0 bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none\" />\n\n            {/* The Image Mask */}\n            <a href={project.link} target=\"_blank\" rel=\"noopener noreferrer\" className=\"block relative w-full h-48 overflow-hidden bg-zinc-100 dark:bg-zinc-900 border-b border-black/5 dark:border-white/10\">\n              <Image\n                height={500}\n                width={800}\n                src={project.image}\n                alt={project.label}\n                className=\"w-full h-full object-cover opacity-50 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700\"\n              />\n            </a>\n\n            {/* Content Plate */}\n            <div className=\"p-8 flex flex-col flex-1 z-10\">\n              <div className=\"flex items-center gap-2 mb-6\">\n                {project.stack.map((tech, i) => (\n                  <span key={i} className=\"text-[0.55rem] uppercase tracking-widest font-medium px-2.5 py-1 border border-black/10 dark:border-white/15 rounded bg-black/5 dark:bg-white/5 text-zinc-600 dark:text-zinc-300 drop-shadow-sm\">\n                    {tech}\n                  </span>\n                ))}\n              </div>\n              <a href={project.link} target=\"_blank\" rel=\"noopener noreferrer\">\n                <h3 className=\"text-xl font-bold font-InterFont text-foreground mb-3 group-hover:text-blue-500 transition-colors\">\n                  {project.label}\n                </h3>\n              </a>\n              <p className=\"text-sm text-zinc-600 dark:text-zinc-400 font-InterFont leading-relaxed\">\n                {project.description}\n              </p>\n            </div>\n          </motion.div>\n        ))}\n      </div>\n    </section>\n  );\n}\n\nexport default PremiumProjects;\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "V:\\vtslforge\\Projects\\My_portfolio\\app\\(main)\\_components\\PremiumTech.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "V:\\vtslforge\\Projects\\My_portfolio\\app\\(main)\\about\\page.tsx",
+    "messages": [
+      {
+        "ruleId": "@typescript-eslint/no-unused-vars",
+        "severity": 1,
+        "message": "'easeIn' is defined but never used.",
+        "line": 2,
+        "column": 10,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 2,
+        "endColumn": 16,
+        "suggestions": [
+          {
+            "messageId": "removeUnusedVar",
+            "data": { "varName": "easeIn" },
+            "fix": { "range": [24, 31], "text": "" },
+            "desc": "Remove unused variable \"easeIn\"."
+          }
+        ]
+      },
+      {
+        "ruleId": "react-hooks/set-state-in-effect",
+        "severity": 2,
+        "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\nV:\\vtslforge\\Projects\\My_portfolio\\app\\(main)\\about\\page.tsx:15:19\n  13 |   const { resolvedTheme } = useTheme();\n  14 |   const [mounted, setMounted] = useState(false);\n> 15 |   useEffect(() => setMounted(true), []);\n     |                   ^^^^^^^^^^ Avoid calling setState() directly within an effect\n  16 |   const spotifyTheme = mounted && resolvedTheme === 'light' ? '1' : '0';\n  17 |\n  18 |   return (",
+        "line": 15,
+        "column": 19,
+        "nodeType": null,
+        "endLine": 15,
+        "endColumn": 29
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "'use client';\r\nimport { easeIn, motion } from 'framer-motion';\r\nimport Navbar from '../_components/Navbar';\r\nimport { IoMusicalNotesOutline } from 'react-icons/io5';\r\nimport { SiYoutubegaming } from 'react-icons/si';\r\nimport { GiEvilBook } from 'react-icons/gi';\r\nimport { PiCookingPot } from 'react-icons/pi';\r\nimport { PiCoffee } from 'react-icons/pi';\r\nimport { useTheme } from 'next-themes';\r\nimport { useEffect, useState } from 'react';\r\n\r\nconst AboutPage = () => {\r\n  const { resolvedTheme } = useTheme();\r\n  const [mounted, setMounted] = useState(false);\r\n  useEffect(() => setMounted(true), []);\r\n  const spotifyTheme = mounted && resolvedTheme === 'light' ? '1' : '0';\r\n\r\n  return (\r\n    <>\r\n      <Navbar />\r\n      <main className=\"flex flex-col items-center w-full overflow-x-hidden min-h-screen\">\r\n        <section className=\"flex flex-col gap-16 w-full max-w-5xl mx-auto px-4 sm:px-6 md:px-8 pb-32\">\r\n          \r\n          {/* -------------------------About Header Title-------------------------------------------- */}\r\n          <section className=\"text-center min-h-[40vh] flex flex-col justify-center items-center relative mt-24\">\r\n            <div className=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-blue-500/10 blur-[100px] rounded-full pointer-events-none\" />\r\n            \r\n            <motion.div \r\n              initial={{ opacity: 0, y: 10 }}\r\n              animate={{ opacity: 1, y: 0 }}\r\n              transition={{ duration: 0.8, ease: \"easeOut\" }}\r\n              className=\"z-10 flex flex-col items-center\"\r\n            >\r\n              <div className=\"flex items-center gap-2 px-4 py-1.5 rounded-full border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 backdrop-blur-sm mb-6\">\r\n                <span className=\"text-[0.65rem] font-semibold tracking-[0.3em] text-zinc-600 dark:text-zinc-300 uppercase\">Behind the surface</span>\r\n              </div>\r\n\r\n              <h1 className=\"text-5xl md:text-7xl lg:text-[6rem] font-InterFont font-black tracking-tighter text-foreground z-10\">\r\n                The Architecture.\r\n              </h1>\r\n            </motion.div>\r\n          </section>\r\n\r\n          {/* -------------------------about me description section--------------------------------------- */}\r\n          <section className=\"flex flex-col border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 backdrop-blur-md rounded-[2rem] p-8 md:p-12 relative overflow-hidden\">\r\n            <div className=\"absolute top-0 right-0 w-64 h-64 bg-blue-500/5 blur-[80px] pointer-events-none rounded-full\" />\r\n            \r\n            <h3 className=\"text-[0.65rem] font-semibold font-InterFont uppercase tracking-[0.3em] text-zinc-500 mb-8 z-10 w-full border-b border-black/10 dark:border-white/10 pb-4\">\r\n              System Documentation\r\n            </h3>\r\n            \r\n            <article className=\"text-sm md:text-base text-zinc-600 dark:text-zinc-400 font-InterFont leading-relaxed flex flex-col gap-6 z-10\">\r\n              <p>\r\n                My journey into technology began during my early school days, when computers sparked a deep curiosity in me. Fascinated by how applications run and systems function, I was inspired to explore the lower-level mechanicsÔÇöa drive that formed the foundation of my engineering mindset today.\r\n              </p>\r\n              <p>\r\n                I thrive on diving deep into the logic behind what I build. I don&apos;t just want things to work; I demand efficient, highly optimized, and scalable systems. My primary directive is to operate as a well-rounded developer capable of executing complete architectures, spanning from database design to high-performance client rendering.\r\n              </p>\r\n              <p>\r\n                Currently, I am expanding my domain expertise into AI and Machine Learning to stay ahead of the computational curve. When I step away from the terminal, you can find me analyzing music patterns, writing fiction, cooking, or immersing myself in strategy and role-playing games.\r\n              </p>\r\n            </article>\r\n          </section>\r\n\r\n          {/* ---------------------------------Human behind it------------------------------------*/}\r\n          <section className=\"flex flex-col gap-6 w-full mt-8\">\r\n            <h3 className=\"text-[0.65rem] font-semibold font-InterFont uppercase tracking-[0.3em] text-zinc-500 mb-2 border-b border-black/10 dark:border-white/10 pb-4\">\r\n              Human Peripherals\r\n            </h3>\r\n            \r\n            <div className=\"grid grid-cols-1 lg:grid-cols-2 gap-6 w-full\">\r\n              {/* Interests Grid */}\r\n              <div className=\"grid grid-cols-2 gap-4\">\r\n                <div className=\"flex flex-col p-6 rounded-[1.5rem] border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group\">\r\n                  <IoMusicalNotesOutline className=\"text-2xl text-zinc-500 group-hover:text-blue-500 dark:group-hover:text-blue-400 mb-4 transition-colors\" />\r\n                  <p className=\"font-semibold text-foreground text-xs mb-1 uppercase tracking-wider\">Music</p>\r\n                  <p className=\"text-xs text-zinc-500\">Synthwave & R&B</p>\r\n                </div>\r\n                \r\n                <div className=\"flex flex-col p-6 rounded-[1.5rem] border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group\">\r\n                  <GiEvilBook className=\"text-2xl text-zinc-500 group-hover:text-purple-500 dark:group-hover:text-purple-400 mb-4 transition-colors\" />\r\n                  <p className=\"font-semibold text-foreground text-xs mb-1 uppercase tracking-wider\">Writing</p>\r\n                  <p className=\"text-xs text-zinc-500\">Fiction Novels</p>\r\n                </div>\r\n                \r\n                <div className=\"flex flex-col p-6 rounded-[1.5rem] border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group\">\r\n                  <SiYoutubegaming className=\"text-2xl text-zinc-500 group-hover:text-emerald-500 dark:group-hover:text-emerald-400 mb-4 transition-colors\" />\r\n                  <p className=\"font-semibold text-foreground text-xs mb-1 uppercase tracking-wider\">Gaming</p>\r\n                  <p className=\"text-xs text-zinc-500\">RPGs & Strategy</p>\r\n                </div>\r\n                \r\n                <div className=\"flex flex-col p-6 rounded-[1.5rem] border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group\">\r\n                  <PiCookingPot className=\"text-2xl text-zinc-500 group-hover:text-orange-500 dark:group-hover:text-orange-400 mb-4 transition-colors\" />\r\n                  <p className=\"font-semibold text-foreground text-xs mb-1 uppercase tracking-wider\">Cooking</p>\r\n                  <p className=\"text-xs text-zinc-500\">System Fuel</p>\r\n                </div>\r\n\r\n                <div className=\"flex p-6 rounded-[1.5rem] border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group col-span-2 items-center gap-6\">\r\n                  <PiCoffee className=\"text-3xl text-zinc-500 group-hover:text-amber-500 dark:group-hover:text-amber-400 transition-colors\" />\r\n                  <div>\r\n                    <p className=\"font-semibold text-foreground text-xs mb-1 uppercase tracking-wider\">Coffee</p>\r\n                    <p className=\"text-xs text-zinc-500\">My personal kerosene</p>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n\r\n              {/* Spotify Embeds */}\r\n              <div className=\"flex flex-col gap-4\">\r\n                <div className=\"overflow-hidden rounded-[1.5rem] border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 grayscale-[80%] opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500\">\r\n                  <iframe\r\n                    data-testid=\"embed-iframe-1\"\r\n                    src={`https://open.spotify.com/embed/playlist/0pwXPzYUlL9bN9Yh4jv01v?utm_source=generator&theme=${spotifyTheme}`}\r\n                    width=\"100%\"\r\n                    height=\"152\"\r\n                    className=\"block w-full border-0\"\r\n                    allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\"\r\n                    allowFullScreen\r\n                    loading=\"lazy\"\r\n                    title=\"Spotify Playlist 1\"\r\n                  />\r\n                </div>\r\n                <div className=\"overflow-hidden rounded-[1.5rem] border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 grayscale-[80%] opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500\">\r\n                  <iframe\r\n                    data-testid=\"embed-iframe-2\"\r\n                    src={`https://open.spotify.com/embed/playlist/2kCLN1MBkhUdE2Taq9Ha5z?utm_source=generator&theme=${spotifyTheme}`}\r\n                    width=\"100%\"\r\n                    height=\"152\"\r\n                    className=\"block w-full border-0\"\r\n                    allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\"\r\n                    allowFullScreen\r\n                    loading=\"lazy\"\r\n                    title=\"Spotify Playlist 2\"\r\n                  />\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </section>\r\n\r\n          <h3 className=\"text-center mt-20 mb-12 text-[0.65rem] uppercase tracking-[0.3em] text-zinc-600 font-InterFont border-t border-black/5 dark:border-white/5 pt-12\">\r\n            System initialization complete.\r\n          </h3>\r\n        </section>\r\n      </main>\r\n    </>\r\n  );\r\n};\r\n\r\nexport default AboutPage;\r\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "V:\\vtslforge\\Projects\\My_portfolio\\app\\layout.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "V:\\vtslforge\\Projects\\My_portfolio\\app\\loading.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "V:\\vtslforge\\Projects\\My_portfolio\\eslint.config.mjs",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "V:\\vtslforge\\Projects\\My_portfolio\\next.config.ts",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "V:\\vtslforge\\Projects\\My_portfolio\\postcss.config.mjs",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "V:\\vtslforge\\Projects\\My_portfolio\\providers\\google-analytics.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "V:\\vtslforge\\Projects\\My_portfolio\\providers\\smoothScroll.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "V:\\vtslforge\\Projects\\My_portfolio\\providers\\theme-provider.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  }
+]
