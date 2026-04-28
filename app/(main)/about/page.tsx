@@ -26,7 +26,7 @@ const AboutPage = () => {
           
           {/* -------------------------About Header Title-------------------------------------------- */}
           <section className="text-center min-h-[40vh] flex flex-col justify-center items-center relative mt-24">
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-blue-500/10 blur-[100px] rounded-full pointer-events-none" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-100 h-100 bg-blue-500/10 blur-[100px] rounded-full pointer-events-none" />
             
             <motion.div 
               initial={{ opacity: 0, y: 10 }}
@@ -45,11 +45,11 @@ const AboutPage = () => {
           </section>
 
           {/* -------------------------about me description section--------------------------------------- */}
-          <section className="flex flex-col border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 backdrop-blur-md rounded-[2rem] p-8 md:p-12 relative overflow-hidden">
+          <section className="flex flex-col border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 backdrop-blur-md  p-8 md:p-12 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/5 blur-[80px] pointer-events-none rounded-full" />
             
             <h3 className="text-[0.65rem] font-semibold font-InterFont uppercase tracking-[0.3em] text-zinc-500 mb-8 z-10 w-full border-b border-black/10 dark:border-white/10 pb-4">
-              System Documentation
+              the human behind
             </h3>
             
             <article className="text-sm md:text-base text-zinc-600 dark:text-zinc-400 font-InterFont leading-relaxed flex flex-col gap-6 z-10">
@@ -68,38 +68,38 @@ const AboutPage = () => {
           {/* ---------------------------------Human behind it------------------------------------*/}
           <section className="flex flex-col gap-6 w-full mt-8">
             <h3 className="text-[0.65rem] font-semibold font-InterFont uppercase tracking-[0.3em] text-zinc-500 mb-2 border-b border-black/10 dark:border-white/10 pb-4">
-              Human Peripherals
+              hobbies
             </h3>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
               {/* Interests Grid */}
               <div className="grid grid-cols-2 gap-4">
-                <div className="flex flex-col p-6 rounded-[1.5rem] border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group">
-                  <IoMusicalNotesOutline className="text-2xl text-zinc-500 group-hover:text-blue-500 dark:group-hover:text-blue-400 mb-4 transition-colors" />
+                <div className="flex flex-col p-6  border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group">
+                  <IoMusicalNotesOutline className="text-2xl text-blue-500 mb-4" />
                   <p className="font-semibold text-foreground text-xs mb-1 uppercase tracking-wider">Music</p>
                   <p className="text-xs text-zinc-500">Synthwave & R&B</p>
                 </div>
                 
-                <div className="flex flex-col p-6 rounded-[1.5rem] border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group">
-                  <GiEvilBook className="text-2xl text-zinc-500 group-hover:text-purple-500 dark:group-hover:text-purple-400 mb-4 transition-colors" />
+                <div className="flex flex-col p-6  border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group">
+                  <GiEvilBook className="text-2xl text-purple-500 mb-4" />
                   <p className="font-semibold text-foreground text-xs mb-1 uppercase tracking-wider">Writing</p>
                   <p className="text-xs text-zinc-500">Fiction Novels</p>
                 </div>
                 
-                <div className="flex flex-col p-6 rounded-[1.5rem] border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group">
-                  <SiYoutubegaming className="text-2xl text-zinc-500 group-hover:text-emerald-500 dark:group-hover:text-emerald-400 mb-4 transition-colors" />
+                <div className="flex flex-col p-6  border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group">
+                  <SiYoutubegaming className="text-2xl text-emerald-500 mb-4" />
                   <p className="font-semibold text-foreground text-xs mb-1 uppercase tracking-wider">Gaming</p>
                   <p className="text-xs text-zinc-500">RPGs & Strategy</p>
                 </div>
                 
-                <div className="flex flex-col p-6 rounded-[1.5rem] border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group">
-                  <PiCookingPot className="text-2xl text-zinc-500 group-hover:text-orange-500 dark:group-hover:text-orange-400 mb-4 transition-colors" />
+                <div className="flex flex-col p-6  border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group">
+                  <PiCookingPot className="text-2xl text-orange-500 mb-4" />
                   <p className="font-semibold text-foreground text-xs mb-1 uppercase tracking-wider">Cooking</p>
                   <p className="text-xs text-zinc-500">System Fuel</p>
                 </div>
 
-                <div className="flex p-6 rounded-[1.5rem] border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group col-span-2 items-center gap-6">
-                  <PiCoffee className="text-3xl text-zinc-500 group-hover:text-amber-500 dark:group-hover:text-amber-400 transition-colors" />
+                <div className="flex p-6  border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group col-span-2 items-center gap-6">
+                  <PiCoffee className="text-3xl text-amber-500" />
                   <div>
                     <p className="font-semibold text-foreground text-xs mb-1 uppercase tracking-wider">Coffee</p>
                     <p className="text-xs text-zinc-500">My personal kerosene</p>
@@ -108,8 +108,8 @@ const AboutPage = () => {
               </div>
 
               {/* Spotify Embeds */}
-              <div className="flex flex-col gap-4">
-                <div className="overflow-hidden rounded-[1.5rem] border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 grayscale-[80%] opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+              <div className="flex flex-col gap-4 justify-between">
+                <div className="overflow-hidden rounded-3xl border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 opacity-60">
                   <iframe
                     data-testid="embed-iframe-1"
                     src={`https://open.spotify.com/embed/playlist/0pwXPzYUlL9bN9Yh4jv01v?utm_source=generator&theme=${spotifyTheme}`}
@@ -122,7 +122,7 @@ const AboutPage = () => {
                     title="Spotify Playlist 1"
                   />
                 </div>
-                <div className="overflow-hidden rounded-[1.5rem] border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 grayscale-[80%] opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+                <div className="overflow-hidden rounded-3xl border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 opacity-60">
                   <iframe
                     data-testid="embed-iframe-2"
                     src={`https://open.spotify.com/embed/playlist/2kCLN1MBkhUdE2Taq9Ha5z?utm_source=generator&theme=${spotifyTheme}`}
@@ -140,7 +140,7 @@ const AboutPage = () => {
           </section>
 
           <h3 className="text-center mt-20 mb-12 text-[0.65rem] uppercase tracking-[0.3em] text-zinc-600 font-InterFont border-t border-black/5 dark:border-white/5 pt-12">
-            System initialization complete.
+            cooking more
           </h3>
         </section>
       </main>

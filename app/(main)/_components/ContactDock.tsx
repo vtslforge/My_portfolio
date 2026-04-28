@@ -16,7 +16,7 @@ const ContactDock = () => {
       <div className="w-full max-w-6xl">
         <div className="w-full flex items-center justify-between gap-6 mb-12">
           <h2 className="text-[0.7rem] font-semibold font-InterFont uppercase tracking-[0.3em] text-zinc-600 dark:text-zinc-400">
-            System Telemetry & Uplink
+            Telemetry & Uplink
           </h2>
           <div className="h-px flex-1 bg-linear-to-r from-black/10 dark:from-white/10 to-transparent" />
         </div>
@@ -29,7 +29,7 @@ const ContactDock = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="xl:col-span-2 flex flex-col items-start border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/60 backdrop-blur-md rounded-3xl p-8 overflow-hidden relative"
+            className="xl:col-span-2 flex flex-col items-start border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/60 backdrop-blur-md p-8 overflow-hidden relative"
           >
             <h3 className="text-foreground text-lg font-bold font-InterFont mb-2">Developer Telemetry</h3>
             <p className="text-zinc-500 font-InterFont text-sm mb-8 line-clamp-1">Continuous deployment & algorithmic contribution history.</p>
@@ -55,11 +55,11 @@ const ContactDock = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="xl:col-span-1 flex flex-col justify-between border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/60 backdrop-blur-md rounded-3xl p-8 relative overflow-hidden"
+            className="xl:col-span-1 flex flex-col justify-between border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/60 backdrop-blur-md p-8 relative overflow-hidden"
           >
             <div className="z-10">
-              <h3 className="text-2xl font-black font-InterFont text-foreground mb-4 tracking-tight">
-                Initiate Contact
+              <h3 className="text-lg font-black font-InterFont text-foreground mb-4 tracking-tight">
+                Contact with me
               </h3>
               <p className="text-zinc-600 dark:text-zinc-400 font-InterFont text-sm leading-relaxed mb-8">
                 Looking to develop scalable solutions or high-performance interfaces? My inbox is strictly open for business and technical collaborations.
@@ -84,9 +84,9 @@ const ContactDock = () => {
               </div>
 
               {/* Call to action */}
-              <a href="mailto:singhvatsalya16@gmail.com" className="w-full border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/60 rounded-full">
+              <a href="mailto:singhvatsalya16@gmail.com" className="w-full border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/60 rounded-xl">
                 <button className="cursor-pointer w-full flex items-center justify-center gap-3 px-6 py-4 rounded-xl bg-foreground text-background font-bold text-xs tracking-[0.2em] uppercase hover:opacity-80 transition-opacity">
-                  <MdOutlineMailOutline className="text-lg" /> Transmit Request
+                  <MdOutlineMailOutline className="text-lg" /> ping me
                 </button>
               </a>
             </div>

@@ -44,7 +44,7 @@ const ProjectsSection = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
             viewport={{ once: true }}
-            className="group relative flex flex-col border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/60 backdrop-blur-md rounded-2xl overflow-hidden hover:border-blue-500/40 transition-all duration-300"
+            className="group relative flex flex-col border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/60 backdrop-blur-md overflow-hidden hover:border-blue-500/40 transition-all duration-300"
           >
             <div className="absolute inset-0 bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
 

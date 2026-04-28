@@ -12,7 +12,7 @@ const PageMotionShell = ({ children }: PageMotionShellProps) => {
   return (
     <>
       <motion.div
-        className='z-80'
+        className='z-80 dark:bg-white bg-black'
         id="scroll-indicator"
         style={{
           scaleX: scrollYProgress,
@@ -22,7 +22,6 @@ const PageMotionShell = ({ children }: PageMotionShellProps) => {
           right: 0,
           height: 3,
           originX: 0,
-          backgroundColor: '#F20AF5',
         }}
       />
       {children}
