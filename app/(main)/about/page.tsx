@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import Navbar from '../_components/Navbar';
 import { IoMusicalNotesOutline } from 'react-icons/io5';
 import { SiYoutubegaming } from 'react-icons/si';
-import { GiEvilBook } from 'react-icons/gi';
 import { PiCookingPot } from 'react-icons/pi';
 import { PiCoffee } from 'react-icons/pi';
 import { useTheme } from 'next-themes';
@@ -39,7 +38,7 @@ const AboutPage = () => {
               </div>
 
               <h1 className="text-5xl md:text-7xl lg:text-[6rem] font-InterFont font-black tracking-tighter text-foreground z-10">
-                The Architecture.
+                About Me.
               </h1>
             </motion.div>
           </section>
@@ -74,36 +73,28 @@ const AboutPage = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
               {/* Interests Grid */}
               <div className="grid grid-cols-2 gap-4">
-                <div className="flex flex-col p-6  border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group">
+                <div className="flex gap-3 flex-col p-6  border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group">
                   <IoMusicalNotesOutline className="text-2xl text-blue-500 mb-4" />
                   <p className="font-semibold text-foreground text-xs mb-1 uppercase tracking-wider">Music</p>
                   <p className="text-xs text-zinc-500">Synthwave & R&B</p>
                 </div>
                 
-                <div className="flex flex-col p-6  border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group">
-                  <GiEvilBook className="text-2xl text-purple-500 mb-4" />
-                  <p className="font-semibold text-foreground text-xs mb-1 uppercase tracking-wider">Writing</p>
-                  <p className="text-xs text-zinc-500">Fiction Novels</p>
+                <div className="flex gap-3 flex-col p-6  border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group">
+                  <PiCoffee className="text-2xl text-purple-500 mb-4" />
+                  <p className="font-semibold text-foreground text-xs mb-1 uppercase tracking-wider">Coffee</p>
+                  <p className="text-xs text-zinc-500">My personal kerosene</p>
                 </div>
                 
-                <div className="flex flex-col p-6  border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group">
+                <div className="flex gap-3 flex-col p-6  border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group">
                   <SiYoutubegaming className="text-2xl text-emerald-500 mb-4" />
                   <p className="font-semibold text-foreground text-xs mb-1 uppercase tracking-wider">Gaming</p>
                   <p className="text-xs text-zinc-500">RPGs & Strategy</p>
                 </div>
                 
-                <div className="flex flex-col p-6  border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group">
+                <div className="flex gap-3 flex-col p-6  border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group">
                   <PiCookingPot className="text-2xl text-orange-500 mb-4" />
                   <p className="font-semibold text-foreground text-xs mb-1 uppercase tracking-wider">Cooking</p>
-                  <p className="text-xs text-zinc-500">System Fuel</p>
-                </div>
-
-                <div className="flex p-6  border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group col-span-2 items-center gap-6">
-                  <PiCoffee className="text-3xl text-amber-500" />
-                  <div>
-                    <p className="font-semibold text-foreground text-xs mb-1 uppercase tracking-wider">Coffee</p>
-                    <p className="text-xs text-zinc-500">My personal kerosene</p>
-                  </div>
+                  <p className="text-xs text-zinc-500">Trying our new recipies</p>
                 </div>
               </div>
 

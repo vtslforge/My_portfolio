@@ -16,7 +16,7 @@ const ContactDock = () => {
       <div className="w-full max-w-6xl">
         <div className="w-full flex items-center justify-between gap-6 mb-12">
           <h2 className="text-[0.7rem] font-semibold font-InterFont uppercase tracking-[0.3em] text-zinc-600 dark:text-zinc-400">
-            Telemetry & Uplink
+            github stat & Uplink
           </h2>
           <div className="h-px flex-1 bg-linear-to-r from-black/10 dark:from-white/10 to-transparent" />
         </div>
@@ -31,7 +31,7 @@ const ContactDock = () => {
             transition={{ duration: 0.5 }}
             className="xl:col-span-2 flex flex-col items-start border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/60 backdrop-blur-md p-8 overflow-hidden relative"
           >
-            <h3 className="text-foreground text-lg font-bold font-InterFont mb-2">Developer Telemetry</h3>
+            <h3 className="text-foreground text-lg font-bold font-InterFont mb-2">Contribution</h3>
             <p className="text-zinc-500 font-InterFont text-sm mb-8 line-clamp-1">Continuous deployment & algorithmic contribution history.</p>
             
             <div className="github-calendar-shell w-full overflow-x-auto flex pb-4 no-scrollbar">

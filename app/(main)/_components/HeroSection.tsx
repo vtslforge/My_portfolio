@@ -24,7 +24,7 @@ const HeroSection = () => {
         </h1>
         
         <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 font-InterFont max-w-2xl mx-auto leading-relaxed mb-12">
-          Software engineer crafting precision tools, scalable systems, and zero-latency interfaces. Focused on React, Next.js, and Node.
+          Software engineer crafting precision tools, scalable systems, and performance centric interfaces. Focused on React, Next.js, and Node.
         </p>
 
         <a href="https://github.com/vtslforge" target="_blank" rel="noopener noreferrer">
