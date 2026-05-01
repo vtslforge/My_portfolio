@@ -29,9 +29,6 @@ const Navbar = () => {
         className="h-9 flex items-center cursor-pointer justify-center rounded-full aspect-square">
         <LuMoon />
       </button>
-      <p className="px-2 text-nowrap text-[0.78rem] md:text-[0.85rem] lg:text-[0.9rem] font-PoppinsFont text-green-700">
-        Work in Progress
-      </p>
     </main>
   );
 };

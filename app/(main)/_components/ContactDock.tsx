@@ -93,10 +93,6 @@ const ContactDock = () => {
           </motion.div>
 
         </div>
-        
-        <p className="text-[0.65rem] text-center mt-12 text-zinc-600 font-InterFont tracking-[0.3em] uppercase">
-          &copy; 2026 Vatsalya. Engine: Next.js.
-        </p>
       </div>
     </section>
   );

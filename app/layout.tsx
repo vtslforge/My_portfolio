@@ -8,6 +8,7 @@ import { Dancing_Script } from 'next/font/google';
 import { ThemeProvider } from '@/providers/theme-provider';
 import GoogleAnalytics from '@/providers/google-analytics';
 import SmoothScrollProvider from '@/providers/smoothScroll';
+import PageMotionShell from './(main)/_components/PageMotionShell';
 
 export const metadata: Metadata = {
   title: 'Vatsalya Singh',
@@ -50,6 +51,7 @@ export default function RootLayout({
       lang="en"
       className={`antialiased ${primaryFont.variable} ${secondaryFont.variable} ${headerFont.variable} ${dancing_Script.variable}`}>
       <body className="min-h-full flex flex-col">
+              <PageMotionShell>
         <SmoothScrollProvider>
           <ThemeProvider
             attribute="class"
@@ -61,6 +63,7 @@ export default function RootLayout({
             {children}
           </ThemeProvider>
         </SmoothScrollProvider>
+        </PageMotionShell>
       </body>
     </html>
   );
