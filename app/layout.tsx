@@ -9,6 +9,7 @@ import { ThemeProvider } from '@/providers/theme-provider';
 import GoogleAnalytics from '@/providers/google-analytics';
 import SmoothScrollProvider from '@/providers/smoothScroll';
 import PageMotionShell from './(main)/_components/PageMotionShell';
+import Navbar from './(main)/_components/Navbar';
 
 export const metadata: Metadata = {
   title: 'Vatsalya Singh',
@@ -51,18 +52,19 @@ export default function RootLayout({
       lang="en"
       className={`antialiased ${primaryFont.variable} ${secondaryFont.variable} ${headerFont.variable} ${dancing_Script.variable}`}>
       <body className="min-h-full flex flex-col">
-              <PageMotionShell>
-        <SmoothScrollProvider>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem>
-            <Suspense fallback={null}>
-              <GoogleAnalytics measurementId={GA_MEASUREMENT_ID} />
-            </Suspense>
-            {children}
-          </ThemeProvider>
-        </SmoothScrollProvider>
+        <PageMotionShell>
+          <SmoothScrollProvider>
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="dark"
+              enableSystem>
+              <Suspense fallback={null}>
+                <GoogleAnalytics measurementId={GA_MEASUREMENT_ID} />
+              </Suspense>
+              <Navbar />
+              {children}
+            </ThemeProvider>
+          </SmoothScrollProvider>
         </PageMotionShell>
       </body>
     </html>

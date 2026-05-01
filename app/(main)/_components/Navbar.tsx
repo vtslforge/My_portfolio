@@ -13,14 +13,17 @@ const Navbar = () => {
     <main className="z-50 h-auto border dark:border-[#1e1e1e]/50 border-[#e4e4e4]/50 dark:bg-[#191919]/70 bg-white/70 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.2)] fixed bottom-10 left-1/2 -translate-x-1/2 w-fit rounded-full p-1 flex items-center justify-center gap-1">
       <Link
         href="/"
-        className={`h-9 flex items-center justify-center rounded-full aspect-square ${pathname === '/' ? '' : ''}`}>
+        className={`h-9 gap-1 px-2 flex items-center justify-center rounded-full aspect-square ${pathname === '/' ? 'bg-blue-500 text-white' : ''}`}>
         <RiHome3Line className="" />
+        {pathname === '/' && <p className='font-InterFont leading-relaxed text-sm font-light'>Home</p>}
       </Link>
 
       <Link
         href="/about"
-        className={`h-9 flex items-center justify-center rounded-full aspect-square ${pathname === '/about' ? '' : ''}`}>
+        className={`h-9 gap-1 px-2 flex items-center justify-center rounded-full aspect-square ${pathname === '/about' ? 'bg-blue-500 text-white' : ''}`}>
         <GoPerson />
+        {pathname === '/about' && <p className='font-InterFont leading-relaxed text-sm font-light'>About</p>}
+
       </Link>
 
       <button

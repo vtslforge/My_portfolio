@@ -1,8 +1,8 @@
-import HeroSection from '../_components/HeroSection';
-import ProjectsSection from '../_components/ProjectsSection';
-import TechStackSection from '../_components/TechStackSection';
-import ContactDock from '../_components/ContactDock';
-import Accordion from '../_components/Accordion';
+import HeroSection from './_components/HeroSection';
+import ProjectsSection from './_components/ProjectsSection';
+import TechStackSection from './_components/TechStackSection';
+import ContactDock from './_components/ContactDock';
+import Accordion from './_components/Accordion';
 
 const page = () => {
   return (
