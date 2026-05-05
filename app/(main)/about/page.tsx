@@ -94,7 +94,7 @@ const AboutPage = () => {
                 <div className="flex gap-3 flex-col p-6  border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group">
                   <PiCookingPot className="text-2xl text-orange-500 mb-4" />
                   <p className="font-semibold text-foreground text-xs mb-1 uppercase tracking-wider">Cooking</p>
-                  <p className="text-xs text-zinc-500">Trying our new recipies</p>
+                  <p className="text-xs text-zinc-500">Trying out new recipies</p>
                 </div>
               </div>
 
