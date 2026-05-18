@@ -1,7 +1,7 @@
-"use client"
+'use client';
 import { motion, useInView } from 'framer-motion';
 import * as React from 'react';
- 
+
 export function WordsPullUp({
   text,
   className = '',
@@ -10,7 +10,7 @@ export function WordsPullUp({
   className?: string;
 }) {
   const splittedText = text.split(' ');
- 
+
   const pullupVariant = {
     initial: { y: 20, opacity: 0 },
     animate: (i: number) => ({
@@ -18,7 +18,7 @@ export function WordsPullUp({
       opacity: 1,
       transition: {
         delay: i * 0.1,
-        duration:1
+        duration: 1,
       },
     }),
   };
@@ -34,8 +34,7 @@ export function WordsPullUp({
           initial="initial"
           animate={isInView ? 'animate' : ''}
           custom={i}
-          className={className}
-        >
+          className={className}>
           {current == '' ? <span>&nbsp;</span> : current}
         </motion.div>
       ))}
