@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import FeaturedDeployement from './FeaturedDeployement';
 
 const ProjectsSection = () => {
   const projectDetails = [
@@ -19,11 +20,11 @@ const ProjectsSection = () => {
       link: 'https://github.com/vtslforge/Txtnok',
     },
     {
-      label: 'SocialConnect',
-      stack: ['Next.js', 'Firebase'],
-      image: '/capp.png',
-      description: 'Centralized insight generation across integrated social platforms like youtube, instagram, facebook more',
-      link: 'https://github.com/vtslforge/socialConnect',
+      label: 'AnekLeaf',
+      stack: ['Next.js', 'ChatGPT API', 'Typescript'],
+      image: '/Anekleaf.png',
+      description: 'AnekLeaf helps you visualize plants in your space before you bring them home. Upload your room, explore plant options, and see realistic AI-powered previews instantly.',
+      link: 'https://github.com/vtslforge/AnekLeaf',
     },
   ];
 
@@ -31,7 +32,18 @@ const ProjectsSection = () => {
     <section className="w-full flex flex-col py-32 items-center relative">
       <div className="w-full flex items-center justify-between gap-6 mb-16 max-w-5xl px-4">
         <h2 className="text-[0.7rem] font-semibold font-InterFont uppercase tracking-[0.3em] text-zinc-600 dark:text-zinc-400">
-          Featured Deployments
+          Featured Repository
+        </h2>
+        <div className="h-px auto flex-1 bg-linear-to-r from-black/10 dark:from-white/10 to-transparent" />
+      </div>
+
+      <div className="w-full px-4 mb-20">
+        <FeaturedDeployement />
+      </div>
+
+      <div className="w-full flex items-center justify-between gap-6 mb-16 max-w-5xl px-4">
+        <h2 className="text-[0.7rem] font-semibold font-InterFont uppercase tracking-[0.3em] text-zinc-600 dark:text-zinc-400">
+          Top Repositories
         </h2>
         <div className="h-px auto flex-1 bg-linear-to-r from-black/10 dark:from-white/10 to-transparent" />
       </div>
@@ -55,7 +67,7 @@ const ProjectsSection = () => {
                 width={800}
                 src={project.image}
                 alt={project.label}
-                className="w-full h-full object-cover opacity-50 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700"
+                className="w-full h-full object-cover opacity-90 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700"
               />
             </a>
 

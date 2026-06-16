@@ -1,27 +1,59 @@
 'use client';
 import { motion } from 'framer-motion';
-import Navbar from '../_components/Navbar';
 import { IoMusicalNotesOutline } from 'react-icons/io5';
-import { SiYoutubegaming } from 'react-icons/si';
-import { PiCookingPot } from 'react-icons/pi';
-import { PiCoffee } from 'react-icons/pi';
-import { useTheme } from 'next-themes';
-import { useEffect, useState } from 'react';
+import { SiSpotify, SiYoutubegaming } from 'react-icons/si';
+import { PiCookingPot, PiCoffee, PiGauge, PiInfinity, PiLeaf, PiTreeStructure } from 'react-icons/pi';
 
 const AboutPage = () => {
-  const { resolvedTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setMounted(true);
-  }, []);
-  const spotifyTheme = mounted && resolvedTheme === 'light' ? '1' : '0';
+  const principles = [
+    {
+      title: 'Performance over clutter',
+      icon: PiGauge,
+    },
+    {
+      title: 'Scalability',
+      icon: PiTreeStructure,
+    },
+    {
+      title: 'Simplicity wins',
+      icon: PiLeaf,
+    },
+    {
+      title: 'Learn endlessly',
+      icon: PiInfinity,
+    },
+  ];
+  const hobbies = [
+    {
+      label: 'Music',
+      detail: 'Synthwave, R&B, and pattern-heavy listening sessions.',
+      icon: IoMusicalNotesOutline,
+      accent: 'text-blue-500',
+    },
+    {
+      label: 'Coffee',
+      detail: 'The small ritual that keeps long build sessions moving.',
+      icon: PiCoffee,
+      accent: 'text-amber-500',
+    },
+    {
+      label: 'Gaming',
+      detail: 'RPGs and strategy games with systems worth dissecting.',
+      icon: SiYoutubegaming,
+      accent: 'text-emerald-500',
+    },
+    {
+      label: 'Cooking',
+      detail: 'Trying new recipes and tuning them like small experiments.',
+      icon: PiCookingPot,
+      accent: 'text-orange-500',
+    },
+  ];
 
   return (
     <>
-      <Navbar />
       <main className="flex flex-col items-center w-full overflow-x-hidden min-h-screen">
-        <section className="flex flex-col gap-16 w-full max-w-5xl mx-auto px-4 sm:px-6 md:px-8 pb-32">
+        <section className="flex flex-col gap-16 w-full max-w-5xl mx-auto px-4 pb-32">
           
           {/* -------------------------About Header Title-------------------------------------------- */}
           <section className="text-center min-h-[40vh] flex flex-col justify-center items-center relative mt-24">
@@ -44,7 +76,7 @@ const AboutPage = () => {
           </section>
 
           {/* -------------------------about me description section--------------------------------------- */}
-          <section className="flex flex-col border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 backdrop-blur-md  p-8 md:p-12 relative overflow-hidden">
+          <section className="flex flex-col border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/60 backdrop-blur-md p-8 md:p-12 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/5 blur-[80px] pointer-events-none rounded-full" />
             
             <h3 className="text-[0.65rem] font-semibold font-InterFont uppercase tracking-[0.3em] text-zinc-500 mb-8 z-10 w-full border-b border-black/10 dark:border-white/10 pb-4">
@@ -65,74 +97,170 @@ const AboutPage = () => {
           </section>
 
           {/* ---------------------------------Human behind it------------------------------------*/}
-          <section className="flex flex-col gap-6 w-full mt-8">
-            <h3 className="text-[0.65rem] font-semibold font-InterFont uppercase tracking-[0.3em] text-zinc-500 mb-2 border-b border-black/10 dark:border-white/10 pb-4">
+          <section className="flex flex-col gap-8 w-full mt-8">
+            <h3 className="text-[0.65rem] font-semibold font-InterFont uppercase tracking-[0.3em] text-zinc-500 border-b border-black/10 dark:border-white/10 pb-4">
               hobbies
             </h3>
-            
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
-              {/* Interests Grid */}
-              <div className="grid grid-cols-2 gap-4">
-                <div className="flex gap-3 flex-col p-6  border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group">
-                  <IoMusicalNotesOutline className="text-2xl text-blue-500 mb-4" />
-                  <p className="font-semibold text-foreground text-xs mb-1 uppercase tracking-wider">Music</p>
-                  <p className="text-xs text-zinc-500">Synthwave & R&B</p>
-                </div>
-                
-                <div className="flex gap-3 flex-col p-6  border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group">
-                  <PiCoffee className="text-2xl text-purple-500 mb-4" />
-                  <p className="font-semibold text-foreground text-xs mb-1 uppercase tracking-wider">Coffee</p>
-                  <p className="text-xs text-zinc-500">My personal kerosene</p>
-                </div>
-                
-                <div className="flex gap-3 flex-col p-6  border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group">
-                  <SiYoutubegaming className="text-2xl text-emerald-500 mb-4" />
-                  <p className="font-semibold text-foreground text-xs mb-1 uppercase tracking-wider">Gaming</p>
-                  <p className="text-xs text-zinc-500">RPGs & Strategy</p>
-                </div>
-                
-                <div className="flex gap-3 flex-col p-6  border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 hover:border-black/10 hover:bg-black/10 dark:hover:border-white/20 dark:hover:bg-white/5 transition-all group">
-                  <PiCookingPot className="text-2xl text-orange-500 mb-4" />
-                  <p className="font-semibold text-foreground text-xs mb-1 uppercase tracking-wider">Cooking</p>
-                  <p className="text-xs text-zinc-500">Trying out new recipies</p>
-                </div>
-              </div>
 
-              {/* Spotify Embeds */}
-              <div className="flex flex-col gap-4 justify-between">
-                <div className="overflow-hidden rounded-3xl border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 opacity-60">
-                  <iframe
-                    data-testid="embed-iframe-1"
-                    src={`https://open.spotify.com/embed/playlist/0pwXPzYUlL9bN9Yh4jv01v?utm_source=generator&theme=${spotifyTheme}`}
-                    width="100%"
-                    height="152"
-                    className="block w-full border-0"
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    allowFullScreen
-                    loading="lazy"
-                    title="Spotify Playlist 1"
-                  />
+            <div className="flex flex-col gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-[1.1fr_0.9fr] gap-6">
+                  <motion.div
+                    initial={{ opacity: 0, y: 14 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true }}
+                    className="relative min-h-72 border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/60 backdrop-blur-md p-8 md:p-10 overflow-hidden group hover:border-blue-500/40 transition-all duration-300"
+                  >
+                    <div className="absolute right-6 top-6 text-8xl text-blue-500/10 group-hover:text-blue-500/20 transition-colors">
+                      <IoMusicalNotesOutline />
+                    </div>
+                    <p className="text-[0.62rem] uppercase tracking-[0.25em] font-InterFont text-blue-500 mb-5">
+                      main frequency
+                    </p>
+                    <h4 className="text-3xl md:text-5xl font-black font-InterFont tracking-tight text-foreground max-w-sm mb-6">
+                      Music keeps the pace.
+                    </h4>
+                    <p className="text-sm text-zinc-600 dark:text-zinc-400 font-InterFont leading-relaxed max-w-md">
+                      Synthwave and R&B sit in the background while I build,
+                      write, or reset. It is less about noise and more about
+                      keeping a steady rhythm.
+                    </p>
+                  </motion.div>
+
+                  <div className="grid grid-cols-1 gap-4">
+                    {hobbies.slice(1).map((item, index) => {
+                      const Icon = item.icon;
+
+                      return (
+                        <motion.div
+                          key={item.label}
+                          initial={{ opacity: 0, y: 12 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.45, delay: index * 0.08 }}
+                          viewport={{ once: true }}
+                          className="group flex items-center gap-5 border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/60 backdrop-blur-md p-5 hover:-translate-y-1 hover:border-blue-500/40 hover:bg-black/10 dark:hover:bg-white/5 transition-all duration-300"
+                        >
+                          <div className="size-11 shrink-0 border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 flex items-center justify-center">
+                            <Icon className={`text-xl ${item.accent}`} />
+                          </div>
+                          <div>
+                            <p className="font-semibold text-foreground text-xs mb-1 uppercase tracking-wider">
+                              {item.label}
+                            </p>
+                            <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                              {item.detail}
+                            </p>
+                          </div>
+                        </motion.div>
+                      );
+                    })}
+                  </div>
                 </div>
-                <div className="overflow-hidden rounded-3xl border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/40 opacity-60">
-                  <iframe
-                    data-testid="embed-iframe-2"
-                    src={`https://open.spotify.com/embed/playlist/2kCLN1MBkhUdE2Taq9Ha5z?utm_source=generator&theme=${spotifyTheme}`}
-                    width="100%"
-                    height="152"
-                    className="block w-full border-0"
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    allowFullScreen
-                    loading="lazy"
-                    title="Spotify Playlist 2"
-                  />
-                </div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 14 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 }}
+                  viewport={{ once: true }}
+                  className="relative overflow-hidden border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/60 backdrop-blur-md p-6 md:p-8 hover:border-blue-500/40 transition-all duration-300"
+                >
+                  <div className="absolute -right-10 -top-14 text-[12rem] text-black/3 dark:text-white/3 pointer-events-none">
+                    <SiSpotify />
+                  </div>
+
+                  <div className="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+                    <div className="flex items-start gap-5">
+                      <div className="size-16 shrink-0 rounded-full border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 text-foreground flex items-center justify-center">
+                        <SiSpotify className="text-3xl" />
+                      </div>
+
+                      <div>
+                        <p className="text-[0.62rem] uppercase tracking-[0.25em] font-InterFont text-zinc-500 mb-3">
+                          Spotify Profile
+                        </p>
+                        <h4 className="text-2xl md:text-4xl font-black font-InterFont tracking-tight text-foreground mb-3">
+                          Vatsalya&apos;s rotation
+                        </h4>
+                        <p className="text-sm text-zinc-600 dark:text-zinc-400 font-InterFont leading-relaxed max-w-xl">
+                          A profile view into what I keep on loop while building,
+                          writing, and resetting between projects.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex flex-col sm:flex-row lg:flex-col gap-3 lg:items-end">
+                      <a
+                        href="https://open.spotify.com/user/wqaow9in8y4ite3wdbu85b5tt?si=f002b976183d4ba6"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex w-fit items-center justify-center gap-2 border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 px-5 py-3 text-[0.65rem] uppercase tracking-[0.2em] font-semibold font-InterFont text-foreground hover:bg-black/10 dark:hover:bg-white/10 transition-colors"
+                      >
+                        <SiSpotify className="text-base" />
+                        Open Profile
+                      </a>
+                    </div>
+                  </div>
+                </motion.div>
               </div>
-            </div>
           </section>
 
-          <h3 className="text-center mt-20 mb-12 text-[0.65rem] uppercase tracking-[0.3em] text-zinc-600 font-InterFont border-t border-black/5 dark:border-white/5 pt-12">
-            cooking more
-          </h3>
+          <section className="relative w-full border pl-3 border-black/5 dark:border-white/5 bg-black/2 dark:bg-white/1 py-12 md:py-14 overflow-hidden">
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-10 lg:gap-14 items-center"
+            >
+              <div>
+                <p className="text-[0.65rem] font-semibold font-InterFont uppercase tracking-[0.3em] text-zinc-500 mb-6">
+                  Core Principles
+                </p>
+                <h3 className="text-3xl md:text-5xl font-black font-InterFont tracking-tight text-foreground leading-[0.95] max-w-md">
+                  How I keep the work sharp.
+                </h3>
+
+                <p className="text-sm text-zinc-600 dark:text-zinc-400 font-InterFont leading-relaxed max-w-sm mt-6">
+                  Small rules that keep the build focused when the scope gets
+                  noisy.
+                </p>
+              </div>
+
+              <div className="relative">
+                <div className="hidden md:block absolute left-10 right-10 top-1/2 h-px bg-linear-to-r from-transparent via-black/10 to-transparent dark:via-white/10" />
+                <div className="hidden md:block absolute left-1/2 top-8 bottom-8 w-px bg-linear-to-b from-transparent via-black/10 to-transparent dark:via-white/10" />
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-10">
+                  {principles.map((principle, index) => {
+                    const Icon = principle.icon;
+
+                    return (
+                      <motion.div
+                        key={principle.title}
+                        initial={{ opacity: 0, scale: 0.96 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.45, delay: index * 0.07 }}
+                        viewport={{ once: true }}
+                        className="group relative flex items-center gap-5"
+                      >
+                        <div className="relative flex size-16 shrink-0 items-center justify-center rounded-full border border-black/5 dark:border-white/10 bg-black/5 dark:bg-black/60 backdrop-blur-md text-zinc-500 dark:text-zinc-400 group-hover:border-blue-500/40 group-hover:text-blue-500 transition-colors">
+                          <Icon className="text-3xl" />
+                          <span className="absolute -right-1 -top-1 flex size-6 items-center justify-center rounded-full border border-black/5 dark:border-white/10 bg-(--background) text-[0.55rem] font-semibold font-InterFont text-zinc-400">
+                            0{index + 1}
+                          </span>
+                        </div>
+
+                        <h4 className="text-base md:text-lg font-semibold font-InterFont text-foreground tracking-tight max-w-44">
+                          {principle.title}
+                        </h4>
+                      </motion.div>
+                    );
+                  })}
+                </div>
+              </div>
+            </motion.div>
+          </section>
+
         </section>
       </main>
     </>

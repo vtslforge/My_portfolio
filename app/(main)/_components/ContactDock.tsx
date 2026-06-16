@@ -16,7 +16,7 @@ const ContactDock = () => {
       <div className="w-full max-w-6xl">
         <div className="w-full flex items-center justify-between gap-6 mb-12">
           <h2 className="text-[0.7rem] font-semibold font-InterFont uppercase tracking-[0.3em] text-zinc-600 dark:text-zinc-400">
-            github stat & Uplink
+            github stat & Social Link
           </h2>
           <div className="h-px flex-1 bg-linear-to-r from-black/10 dark:from-white/10 to-transparent" />
         </div>
@@ -78,7 +78,7 @@ const ContactDock = () => {
                 <a href="https://www.linkedin.com/in/vtslforge/" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-blue-500 transition-colors hover:scale-110 duration-300">
                   <FaLinkedin className="text-xl" />
                 </a>
-                <a href="https://www.instagram.com/vtsl.tsx/" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-pink-500 transition-colors hover:scale-110 duration-300">
+                <a href="https://www.instagram.com/vtsl.x/" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-pink-500 transition-colors hover:scale-110 duration-300">
                   <FaInstagram className="text-xl" />
                 </a>
               </div>

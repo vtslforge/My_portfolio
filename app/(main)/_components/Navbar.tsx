@@ -5,6 +5,7 @@ import { LuMoon, LuSun } from 'react-icons/lu';
 import { RiHome3Line } from 'react-icons/ri';
 import { useTheme } from 'next-themes';
 import { GoPerson } from 'react-icons/go';
+import { useState, useEffect } from 'react';
 
 const navItems = [
   {
@@ -22,7 +23,14 @@ const navItems = [
 const Navbar = () => {
   const pathname = usePathname();
   const { theme, setTheme } = useTheme();
-  const isDark = theme === 'dark';
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setMounted(true);
+  }, []);
+
+  const isDark = mounted && theme === 'dark';
 
   return (
     <nav
@@ -50,10 +58,15 @@ const Navbar = () => {
       })}
       <button
         type="button"
-        aria-label={`Switch to ${isDark ? 'light' : 'dark'} mode`}
+        aria-label={
+          mounted ? `Switch to ${isDark ? 'light' : 'dark'} mode` : 'Toggle theme'
+        }
         onClick={() => setTheme(isDark ? 'light' : 'dark')}
-        className="ml-1 flex size-11 cursor-pointer items-center justify-center rounded-full border border-black/6lack/[0.035] text-black/65 transition-all duration-300 hover:bg-black/7.5 hover:text-black dark:border-white/8 dark:bg-white/6 dark:text-white/70 dark:hover:bg-white/11 dark:hover:text-white">
-        {isDark ? <LuSun className="size-4.5" /> : <LuMoon className="size-4.5" />}
+        className="ml-1 flex size-11 cursor-pointer items-center justify-center rounded-full border border-black/[0.035] text-black/65 transition-all duration-300 hover:bg-black/7.5 hover:text-black dark:border-white/8 dark:bg-white/6 dark:text-white/70 dark:hover:bg-white/11 dark:hover:text-white">
+        <span
+          className={`transition-opacity duration-300 ${mounted ? 'opacity-100' : 'opacity-0'}`}>
+          {isDark ? <LuSun className="size-4.5" /> : <LuMoon className="size-4.5" />}
+        </span>
       </button>
     </nav>
   );

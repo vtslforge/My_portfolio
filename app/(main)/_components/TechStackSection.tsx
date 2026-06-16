@@ -31,7 +31,7 @@ const TechStackSection = () => {
     <section className="w-full flex flex-col items-center py-24 border-y border-black/5 dark:border-white/5 bg-black/2 dark:bg-white/1">
       <div className="w-full max-w-5xl px-4 flex flex-col items-center text-center">
         <h2 className="text-[0.7rem] font-semibold font-InterFont uppercase tracking-[0.3em] text-zinc-400 mb-12">
-          Engineering Stack
+          Tech Stack
         </h2>
         
         <div className="flex flex-wrap justify-center gap-x-8 gap-y-12">
