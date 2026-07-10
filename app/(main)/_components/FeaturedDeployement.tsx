@@ -52,7 +52,7 @@ const FeaturedDeployement = () => {
         <div className="relative z-10 p-8 md:p-10 flex flex-col justify-between gap-10">
           <div>
             <div className="flex items-center gap-2 mb-6 flex-wrap">
-              {['Featured Deployment', 'Next.js', 'ChatGPT API'].map((item) => (
+              {['Next.js', 'ChatGPT API','Cloudinary'].map((item) => (
                 <span
                   key={item}
                   className="text-[0.55rem] uppercase tracking-widest font-medium px-2.5 py-1 border border-black/10 dark:border-white/15 rounded bg-black/5 dark:bg-white/5 text-zinc-600 dark:text-zinc-300 drop-shadow-sm"
